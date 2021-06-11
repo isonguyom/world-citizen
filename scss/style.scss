@@ -1,0 +1,28 @@
+$font-stack: lato,
+sans-serif;
+$primary-color: #A52A2A;
+$secondary-color: #008B8B;
+
+@mixin primaryBg {
+    background-color: $primary-color;
+    color: white;
+}
+
+.primary-bg {
+    height: fit-content;
+    @include primaryBg;
+}
+
+main {
+    height: fit-content;
+
+    .onboarding {
+        height: 70vh;
+        background: url("../images/larm-rmah-AEaTUnvneik-unsplash.jpg");
+        background-size: cover;
+    }
+}
+
+footer {
+    @include primaryBg;
+}

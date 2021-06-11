@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "style.css",
+	"sources": [
+		"../scss/style.scss"
+	],
+	"sourcesContent": [
+		"$font-stack: lato,\r\nsans-serif;\r\n$primary-color: #A52A2A;\r\n$secondary-color: #008B8B;\r\n\r\n@mixin primaryBg {\r\n    background-color: $primary-color;\r\n    color: white;\r\n}\r\n\r\n.primary-bg {\r\n    height: fit-content;\r\n    @include primaryBg;\r\n}\r\n\r\nmain {\r\n    height: fit-content;\r\n\r\n    .onboarding {\r\n        height: 70vh;\r\n        background: url(\"../images/larm-rmah-AEaTUnvneik-unsplash.jpg\");\r\n        background-size: cover;\r\n    }\r\n}\r\n\r\nfooter {\r\n    @include primaryBg;\r\n}"
+	],
+	"names": [],
+	"mappings": ";AAUA,AAAA,WAAW,CAAC;EACR,MAAM,EAAE,WAAW;EALnB,gBAAgB,EAJJ,OAAO;EAKnB,KAAK,EAAE,KAAK;CAMf;;;AAED,AAAA,IAAI,CAAC;EACD,MAAM,EAAE,WAAW;CAOtB;;;AARD,AAGI,IAHA,CAGA,WAAW,CAAC;EACR,MAAM,EAAE,IAAI;EACZ,UAAU,EAAE,mDAAmD;EAC/D,eAAe,EAAE,KAAK;CACzB;;;AAGL,AAAA,MAAM,CAAC;EAnBH,gBAAgB,EAJJ,OAAO;EAKnB,KAAK,EAAE,KAAK;CAoBf"
+}

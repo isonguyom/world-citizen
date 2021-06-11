@@ -1,0 +1,26 @@
+/* line 11, ../../web/projects/world citizen/scss/style.scss */
+.primary-bg {
+  height: fit-content;
+  background-color: #A52A2A;
+  color: white;
+}
+
+/* line 16, ../../web/projects/world citizen/scss/style.scss */
+main {
+  height: fit-content;
+}
+
+/* line 19, ../../web/projects/world citizen/scss/style.scss */
+main .onboarding {
+  height: 70vh;
+  background: url("../images/larm-rmah-AEaTUnvneik-unsplash.jpg");
+  background-size: cover;
+}
+
+/* line 26, ../../web/projects/world citizen/scss/style.scss */
+footer {
+  background-color: #A52A2A;
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */

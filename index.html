@@ -2,36 +2,338 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Cloth donation website">
-    <meta name="author" content="Martin Isonguyo">
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <title>World Cititzen</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Cloth donation website">
+  <meta name="author" content="Martin Isonguyo">
+  <!-- Lato font CDN -->
+  <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  <!-- Iconmonstr CDN -->
+  <link href='https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css' rel='stylesheet' type='text/css'>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>World Cititzen</title>
 </head>
 
 <body>
-   
-    <header>
-      
-    </header>
-    
 
-    
-    
-    
-    
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-        crossorigin="anonymous"></script>
+  <header class="primary-bg w-100 py-3 px-3">
+    <div class="container d-flex justify-content-between align-items-center">
+      <a class="navbar-brand w-75 mb-3 d-block" href="#">
+        <img src="./images/logo.png" alt="" class="align-text-top w-50">
+      </a>
+      <a href="#" class="btn btn-primary">Donate Now</a>
+    </div>
+    <nav class="navbar navbar-light bg-transparent">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-white fw-bold py-2" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white py-2" href="#">Our Stories</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white py-2" href="#">Case Studies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white py-2" href="#">Login</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit"><i class="bi bi-search"></i></button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-    
+  <main>
+    <section class="onboarding w-100 container-fluid">
+      <div class="card border-0 text-white">
+        <!-- <img src="./images/larm-rmah-AEaTUnvneik-unsplash.jpg" class="card-img" alt="..."> -->
+        <div class="card-img-overlay text-center">
+          <h2 class="card-title align-middle">A cloth could mean so much to someone, somewhere.</h2>
+          <a href="#" class="btn btn-primary">Donate Now</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="position-relative container-fluid text-center">
+      <h2 class="text-uppercase">our donation options</h2>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="./images/iconmonstr-home-8.svg" class="card-img-top w-25 mx-auto" alt="home icon">
+            <div class="card-body">
+              <h5 class="card-title">Home Collection</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe amet, maxime suscipit
+                deserunt corporis voluptas.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="./images/iconmonstr-building-15.svg" class="card-img-top w-25 mx-auto" alt="donation center icon">
+            <div class="card-body">
+              <h5 class="card-title">Donation Center</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe amet, maxime suscipit
+                deserunt corporis voluptas.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="./images/iconmonstr-building-17.svg" class="card-img-top w-25 mx-auto" alt="local concil icon">
+            <div class="card-body">
+              <h5 class="card-title">Local Concil</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe amet, maxime suscipit
+                deserunt corporis voluptas.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container-fluid">
+      <h2 class="text-uppercase text-center">our donation options</h2>
+      <div class="card-group flex-column">
+        <div class="card mb-3 w-100">
+          <div class="row g-0">
+            <div class="col-md-6">
+              <img src="./images/maude-frederique-lavoie-EDSTj4kCUcw-unsplash.jpg" class="w-100" alt="...">
+            </div>
+            <div class="col-md-6">
+              <div class="card-body">
+                <h5 class="card-title">Facilisis nunc</h5>
+                <p class="card-text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam, mollitia qui officia deleniti fugiat
+                  sint, voluptatum dicta commodi atque amet voluptates, maiores sit vel tempora repellat et quis quo
+                  consequatur!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3 w-100">
+          <div class="row g-0">
+            <div class="col-md-6">
+              <img src="./images/joel-muniz-BErJJL_KsjA-unsplash.jpg" class="w-100" alt="...">
+            </div>
+            <div class="col-md-6">
+              <div class="card-body">
+                <h5 class="card-title">Facilisis nunc</h5>
+                <p class="card-text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam, mollitia qui officia deleniti fugiat
+                  sint, voluptatum dicta commodi atque amet voluptates, maiores sit vel tempora repellat et quis quo
+                  consequatur!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3 w-100">
+          <div class="row g-0">
+            <div class="col-md-6">
+              <img src="./images/akshay-chauhan-CsLWTb7gQDQ-unsplash.jpg" class="w-100" alt="...">
+            </div>
+            <div class="col-md-6">
+              <div class="card-body">
+                <h5 class="card-title">Facilisis nunc</h5>
+                <p class="card-text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam, mollitia qui officia deleniti fugiat
+                  sint, voluptatum dicta commodi atque amet voluptates, maiores sit vel tempora repellat et quis quo
+                  consequatur!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container-fluid text-center">
+      <h2 class="text-uppercase text-center">donors of the month</h2>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="./images/alex-perri-At__EKm5PGE-unsplash.jpg" class="card-img-top rounded-circle w-50 mx-auto"
+              alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-uppercase">Paul abel</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="./images/philip-martin-5aGUyCW_PJw-unsplash.jpg" class="card-img-top rounded-circle w-50 mx-auto"
+              alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-uppercase">john wick</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="./images/michael-dam-mEZ3PoFGs_k-unsplash.jpg" class="card-img-top rounded-circle w-50 mx-auto"
+              alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-uppercase">linda scot</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="./images/alex-perri-At__EKm5PGE-unsplash.jpg" class="card-img-top rounded-circle w-50 mx-auto"
+              alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-uppercase">grey walter</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="./images/mike-von-BhcutpohYwg-unsplash.jpg" class="card-img-top rounded-circle w-50 mx-auto"
+              alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-uppercase">Gloria Augis</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="./images/ayo-ogunseinde-sibVwORYqs0-unsplash.jpg" class="card-img-top rounded-circle w-50 mx-auto"
+              alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-uppercase">Uwem sunday</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container-fluid">
+      <h2 class="text-uppercase text-center">donors of the month</h2>
+      <div class="card-group">
+        <div class="col-md-6">
+          <div class="card bg-dark text-white">
+            <img src="./images/md-salman-tWOz2_EK5EQ-unsplash.jpg" class="card-img" alt="...">
+            <div class="card-img-overlay">
+              <h5 class="card-title">Sapien pharetra</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card bg-dark text-white">
+            <img src="./images/tanjir-ahmed-chowdhury-Nem1BLADG4c-unsplash.jpg" class="card-img" alt="...">
+            <div class="card-img-overlay">
+              <h5 class="card-title">Tortor ante facilisis</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card bg-dark text-white">
+            <img src="./images/ricardo-gomez-angel-OnkqXwxWYAE-unsplash.jpg" class="card-img" alt="...">
+            <div class="card-img-overlay">
+              <h5 class="card-title">Vestibulum rutrum</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card bg-dark text-white">
+            <img src="./images/sincerely-media-6cHumpSxTvs-unsplash.jpg" class="card-img" alt="...">
+            <div class="card-img-overlay">
+              <h5 class="card-title">Non proin</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+  <footer>
+    <section class="container-fluid">
+      <div class="card-group">
+        <div class="card bg-transparent">
+          <div class="card-body">
+            <h5 class="card-title text-uppercase">Contact</h5>
+            <address>
+              Head Office: 5, Web
+              Street, Uyo, Nigeria. <br>
+              Tel: 00000000000 <br>
+              Email: @
+            </address>
+            <nav class="nav">
+              <a class="nav-link" href="#"><i class="im im-twitter"></i></a>
+              <a class="nav-link" href="#"><i class="im im-instagram"></i></a>
+              <a class="nav-link" href="#"><i class="im im-facebook"></i></a>
+              <a class="nav-link" href="#"><i class="im im-linkedin"></i></a>
+            </nav>
+          </div>
+        </div>
+        <div class="card bg-transparent">
+          <div class="card-body">
+            <h5 class="card-title text-uppercase text-center">Links</h5>
+            <nav class="nav flex-column">
+              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#">Top Donors</a>
+              <a class="nav-link" href="#">Stories</a>
+              <a class="nav-link" href="#">Case Studies</a>
+              <a class="nav-link" href="#">Terms of Use</a>
+              <a class="nav-link" href="#">Privacy Policy</a>
+              <a class="nav-link" href="#">Donation Centers</a>
+            </nav>
+          </div>
+        </div>
+        <div class="card bg-transparent">
+          <div class="card-body">
+            <h5 class="card-title text-uppercase">Partners</h5>
+            <div class="text-center row">
+              <img src="./images/path4.png" alt="FedEx">
+              <img src="./images/Shape.png" alt="Gokada">
+              <img src="./images/Layer_2_1_.png" alt="...">
+              <img src="./images/image.png" alt="...">
+              <img src="./images/image (1).png" alt="...">
+              <img src="./images/image (2).png" alt="...">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container-fluid">
+<p class="text-center">© Copyright 2021 clothdonors.org</p>
+    </section>
+  </footer>
+
+
+
+
+
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+
+
 </body>
 
 </html>
