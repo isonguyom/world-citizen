@@ -1,26 +1,80 @@
-/* line 11, ../../web/projects/world citizen/scss/style.scss */
+/* line 13, ../../web/projects/world citizen/scss/style.scss */
+body {
+  background-color: #E9CACA;
+}
+
+/* line 20, ../../web/projects/world citizen/scss/style.scss */
+.header,
 .primary-bg {
   height: fit-content;
   background-color: #A52A2A;
   color: white;
 }
 
-/* line 16, ../../web/projects/world citizen/scss/style.scss */
+/* line 26, ../../web/projects/world citizen/scss/style.scss */
+.btn {
+  border-radius: 40px;
+  background-color: #008B8B;
+  color: white;
+}
+
+/* line 32, ../../web/projects/world citizen/scss/style.scss */
 main {
   height: fit-content;
 }
 
-/* line 19, ../../web/projects/world citizen/scss/style.scss */
+/* line 35, ../../web/projects/world citizen/scss/style.scss */
 main .onboarding {
-  height: 70vh;
-  background: url("../images/larm-rmah-AEaTUnvneik-unsplash.jpg");
+  height: 100vh;
+  background: url("../images/larm-rmah-AEaTUnvneik-unsplash.jpg") no-repeat;
   background-size: cover;
+  background-color: rgba(0, 0, 0, 0.521);
+  background-blend-mode: soft-light;
 }
 
-/* line 26, ../../web/projects/world citizen/scss/style.scss */
+/* line 43, ../../web/projects/world citizen/scss/style.scss */
+main .card1-bg {
+  background-color: #E8C7C7;
+}
+
+/* line 47, ../../web/projects/world citizen/scss/style.scss */
+main .card2-img img {
+  height: 200px;
+}
+
+/* line 51, ../../web/projects/world citizen/scss/style.scss */
+main .card3 img {
+  height: 150px;
+  width: 150px;
+}
+
+/* line 56, ../../web/projects/world citizen/scss/style.scss */
+main .card4 img {
+  height: 300px;
+}
+
+/* line 61, ../../web/projects/world citizen/scss/style.scss */
 footer {
   background-color: #A52A2A;
   color: white;
+}
+
+@media screen and (min-width: 576px) {
+  /* line 67, ../../web/projects/world citizen/scss/style.scss */
+  .card2-img img {
+    height: 300px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 76, ../../web/projects/world citizen/scss/style.scss */
+  main .card2-img img {
+    height: 500px;
+  }
+  /* line 80, ../../web/projects/world citizen/scss/style.scss */
+  main .card4 img {
+    height: 400px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

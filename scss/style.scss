@@ -2,27 +2,84 @@ $font-stack: lato,
 sans-serif;
 $primary-color: #A52A2A;
 $secondary-color: #008B8B;
+$bg-body: #E9CACA;
+$bg-card1: #E8C7C7;
 
 @mixin primaryBg {
     background-color: $primary-color;
     color: white;
 }
 
+body {
+    background-color: $bg-body;
+}
+
+// img {
+//     max-width: 100%;
+// }
+.header,
 .primary-bg {
     height: fit-content;
     @include primaryBg;
+}
+
+.btn {
+    border-radius: 40px;
+    background-color: $secondary-color;
+    color: white;
 }
 
 main {
     height: fit-content;
 
     .onboarding {
-        height: 70vh;
-        background: url("../images/larm-rmah-AEaTUnvneik-unsplash.jpg");
+        height: 100vh;
+        background: url("../images/larm-rmah-AEaTUnvneik-unsplash.jpg") no-repeat;
         background-size: cover;
+        background-color: rgba(0, 0, 0, 0.521);
+        background-blend-mode: soft-light;
+    }
+
+    .card1-bg {
+        background-color: $bg-card1
+    }
+
+    .card2-img img {
+        height: 200px;
+    }
+
+    .card3 img {
+        height: 150px;
+        width: 150px;
+    }
+
+    .card4 img {
+        height: 300px;
     }
 }
 
 footer {
     @include primaryBg;
+}
+
+@media screen and (min-width: 576px) {
+
+    .card2-img img {
+        height: 300px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    main {
+
+        .card2-img img {
+            height: 500px;
+        }
+
+        .card4 img {
+            height: 400px;
+        }
+
+    }
 }
