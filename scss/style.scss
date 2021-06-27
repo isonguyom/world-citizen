@@ -4,6 +4,7 @@ $primary-color: #A52A2A;
 $secondary-color: #008B8B;
 $bg-body: #E9CACA;
 $bg-card1: #E8C7C7;
+$bg-section1: #D47878;
 
 @mixin primaryBg {
     background-color: $primary-color;
@@ -30,7 +31,9 @@ body {
 }
 
 main {
-    height: fit-content;
+    section {
+        padding: 3em 5% !important;
+    }
 
     .onboarding {
         height: 100vh;
@@ -41,7 +44,7 @@ main {
     }
 
     .card1-bg {
-        background-color: $bg-card1
+        background-color: $bg-card1;
     }
 
     .card2-img img {
@@ -56,6 +59,14 @@ main {
     .card4 img {
         height: 300px;
     }
+
+    .card-img-overlay {
+        background-color: rgba(0, 0, 0, 0.459);
+    }
+
+    .section1-bg {
+        background-color: $bg-section1;
+    }
 }
 
 footer {
@@ -63,22 +74,31 @@ footer {
 }
 
 @media screen and (min-width: 576px) {
+    main {
+        .card2-img img {
+            height: 300px;
+        }
 
-    .card2-img img {
-        height: 300px;
     }
 }
 
 @media screen and (min-width: 1024px) {
 
     main {
+        section {
+            padding: 5em 7% !important;
+        }
+
+        .card1-bg {
+            width: 75%;
+        }
 
         .card2-img img {
             height: 500px;
         }
 
         .card4 img {
-            height: 400px;
+            height: 450px;
         }
 
     }
