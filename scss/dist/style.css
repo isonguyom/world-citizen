@@ -1,28 +1,23 @@
-/* line 15, ../../web/projects/world citizen/scss/style.scss */
 body {
   background-color: #E9CACA;
 }
 
-/* line 19, ../../web/projects/world citizen/scss/style.scss */
 p,
 address,
 a {
   opacity: 0.8;
 }
 
-/* line 25, ../../web/projects/world citizen/scss/style.scss */
 a:hover {
   text-decoration: underline;
   opacity: 1 !important;
 }
 
-/* line 30, ../../web/projects/world citizen/scss/style.scss */
 .btn:hover {
   background-color: #007e7e !important;
   color: white;
 }
 
-/* line 35, ../../web/projects/world citizen/scss/style.scss */
 .header,
 .primary-bg {
   height: fit-content;
@@ -30,7 +25,6 @@ a:hover {
   color: white;
 }
 
-/* line 41, ../../web/projects/world citizen/scss/style.scss */
 .btn {
   border-radius: 40px;
   background-color: #008B8B;
@@ -38,47 +32,32 @@ a:hover {
   opacity: 1 !important;
 }
 
-/* line 48, ../../web/projects/world citizen/scss/style.scss */
 header {
   padding: 3em 5% !important;
 }
-
-/* line 51, ../../web/projects/world citizen/scss/style.scss */
 header .navbar-brand {
   opacity: 1 !important;
 }
-
-/* line 55, ../../web/projects/world citizen/scss/style.scss */
 header .custom-navbar {
   background-color: #B94343;
   border-radius: 40px;
 }
-
-/* line 59, ../../web/projects/world citizen/scss/style.scss */
 header .custom-navbar .nav-link {
   font-size: 1.3rem !important;
   opacity: 0.8 !important;
 }
-
-/* line 63, ../../web/projects/world citizen/scss/style.scss */
 header .custom-navbar .nav-link.active {
   opacity: 1 !important;
 }
-
-/* line 67, ../../web/projects/world citizen/scss/style.scss */
 header .custom-navbar .nav-link:hover {
   opacity: 1 !important;
 }
-
-/* line 72, ../../web/projects/world citizen/scss/style.scss */
 header .custom-navbar .search-input {
   border: 1px solid #E9CACA;
   border-top-left-radius: 50px;
   border-bottom-left-radius: 50px;
   border-right: none;
 }
-
-/* line 79, ../../web/projects/world citizen/scss/style.scss */
 header .custom-navbar button.btn {
   background-color: #A52A2A;
   border-radius: 0;
@@ -86,12 +65,9 @@ header .custom-navbar button.btn {
   border-bottom-right-radius: 40px;
 }
 
-/* line 91, ../../web/projects/world citizen/scss/style.scss */
 main section {
   padding: 3em 5% !important;
 }
-
-/* line 95, ../../web/projects/world citizen/scss/style.scss */
 main .onboarding {
   height: 100vh;
   background: url("../images/landing-page.jpg") no-repeat;
@@ -99,107 +75,78 @@ main .onboarding {
   background-color: rgba(0, 0, 0, 0.521);
   background-blend-mode: soft-light;
 }
-
-/* line 103, ../../web/projects/world citizen/scss/style.scss */
 main .card1-bg {
   background-color: #E8C7C7;
 }
-
-/* line 107, ../../web/projects/world citizen/scss/style.scss */
 main .card2-img img {
   height: 200px;
 }
-
-/* line 111, ../../web/projects/world citizen/scss/style.scss */
 main .card3 img {
   height: 180px;
   width: 180px;
 }
-
-/* line 116, ../../web/projects/world citizen/scss/style.scss */
 main .card4 img {
   height: 300px;
 }
-
-/* line 120, ../../web/projects/world citizen/scss/style.scss */
 main .card-img-overlay {
   background-color: rgba(0, 0, 0, 0.459);
 }
 
-/* line 126, ../../web/projects/world citizen/scss/style.scss */
 footer {
   background-color: #A52A2A;
   color: white;
 }
-
-/* line 129, ../../web/projects/world citizen/scss/style.scss */
 footer section {
   padding: 3em 5% !important;
 }
 
 @media screen and (min-width: 576px) {
-  /* line 136, ../../web/projects/world citizen/scss/style.scss */
   main .card2-img img {
     height: 300px;
   }
 }
-
 @media screen and (min-width: 1024px) {
-  /* line 146, ../../web/projects/world citizen/scss/style.scss */
   main header {
     padding: 5em 7% !important;
   }
-  /* line 150, ../../web/projects/world citizen/scss/style.scss */
   main section {
     padding: 5em 7% !important;
   }
-  /* line 154, ../../web/projects/world citizen/scss/style.scss */
   main .card1-bg {
     width: 75%;
   }
-  /* line 157, ../../web/projects/world citizen/scss/style.scss */
   main .card1-bg .card-title {
     font-size: 1.5rem;
   }
-  /* line 161, ../../web/projects/world citizen/scss/style.scss */
   main .card1-bg .card-text {
     font-size: 1.1rem;
   }
-  /* line 167, ../../web/projects/world citizen/scss/style.scss */
   main .card2 .card-title {
     font-size: 2rem;
     line-height: 2em;
   }
-  /* line 172, ../../web/projects/world citizen/scss/style.scss */
   main .card2 .card-text {
     font-size: 1.3rem;
   }
-  /* line 176, ../../web/projects/world citizen/scss/style.scss */
   main .card2 .card2-img img {
     height: 500px;
   }
-  /* line 183, ../../web/projects/world citizen/scss/style.scss */
   main .card4 img {
     height: 450px;
   }
-  /* line 187, ../../web/projects/world citizen/scss/style.scss */
   main .card4 h5 {
     font-size: 2rem;
   }
-  /* line 197, ../../web/projects/world citizen/scss/style.scss */
+
   footer section {
     padding: 5em 7% !important;
   }
-  /* line 201, ../../web/projects/world citizen/scss/style.scss */
   footer address,
-  footer .nav-link,
-  footer .copyright {
+footer .nav-link,
+footer .copyright {
     font-size: 1.3rem;
   }
-  /* line 207, ../../web/projects/world citizen/scss/style.scss */
   footer .social-nav .nav-link i {
     font-size: 2rem;
   }
 }
-
-/*# sourceMappingURL=style.css.map */

@@ -5,6 +5,7 @@ $secondary-color: #008B8B;
 $bg-body: #E9CACA;
 $bg-card1: #E8C7C7;
 $bg-section1: #D47878;
+$btn-hover: #007e7e;
 
 @mixin primaryBg {
     background-color: $primary-color;
@@ -15,9 +16,22 @@ body {
     background-color: $bg-body;
 }
 
-// img {
-//     max-width: 100%;
-// }
+p,
+address,
+a {
+    opacity: 0.8;
+}
+
+a:hover {
+    text-decoration: underline;
+    opacity: 1 !important;
+}
+
+.btn:hover {
+    background-color: $btn-hover !important;
+    color: white;
+}
+
 .header,
 .primary-bg {
     height: fit-content;
@@ -28,7 +42,50 @@ body {
     border-radius: 40px;
     background-color: $secondary-color;
     color: white;
+    opacity: 1 !important;
 }
+
+header {
+    padding: 3em 5% !important;
+
+    .navbar-brand {
+        opacity: 1 !important;
+    }
+
+    .custom-navbar {
+        background-color: #B94343;
+        border-radius: 40px;
+
+        .nav-link {
+            font-size: 1.3rem !important;
+            opacity: 0.8 !important;
+
+            &.active {
+                opacity: 1 !important;
+            }
+
+            &:hover {
+               opacity: 1 !important;
+            }
+        }
+
+        .search-input {
+            border: 1px solid $bg-body;
+            border-top-left-radius: 50px;
+            border-bottom-left-radius: 50px;
+            border-right: none;
+        }
+
+        button.btn {
+            background-color: $primary-color;
+            border-radius: 0;
+            border-top-right-radius: 40px;
+            border-bottom-right-radius: 40px;
+        }
+    }
+}
+
+
 
 main {
     section {
@@ -37,7 +94,7 @@ main {
 
     .onboarding {
         height: 100vh;
-        background: url("../images/larm-rmah-AEaTUnvneik-unsplash.jpg") no-repeat;
+        background: url("../images/landing-page.jpg") no-repeat;
         background-size: cover;
         background-color: rgba(0, 0, 0, 0.521);
         background-blend-mode: soft-light;
@@ -52,8 +109,8 @@ main {
     }
 
     .card3 img {
-        height: 150px;
-        width: 150px;
+        height: 180px;
+        width: 180px;
     }
 
     .card4 img {
@@ -62,15 +119,16 @@ main {
 
     .card-img-overlay {
         background-color: rgba(0, 0, 0, 0.459);
-    }
 
-    .section1-bg {
-        background-color: $bg-section1;
     }
 }
 
 footer {
     @include primaryBg;
+
+    section {
+        padding: 3em 5% !important;
+    }
 }
 
 @media screen and (min-width: 576px) {
@@ -85,21 +143,69 @@ footer {
 @media screen and (min-width: 1024px) {
 
     main {
+        header {
+            padding: 5em 7% !important;
+        }
+
         section {
             padding: 5em 7% !important;
         }
 
         .card1-bg {
             width: 75%;
+
+            .card-title {
+                font-size: 1.5rem;
+            }
+
+            .card-text {
+                font-size: 1.1rem;
+            }
         }
 
-        .card2-img img {
-            height: 500px;
+        .card2 {
+            .card-title {
+                font-size: 2rem;
+                line-height: 2em;
+            }
+
+            .card-text {
+                font-size: 1.3rem;
+            }
+
+            .card2-img img {
+                height: 500px;
+            }
         }
 
-        .card4 img {
-            height: 450px;
+        .card4 {
+
+            img {
+                height: 450px;
+            }
+
+            h5 {
+                font-size: 2rem;
+            }
+
         }
 
+    }
+
+    footer {
+
+        section {
+            padding: 5em 7% !important;
+        }
+
+        address,
+        .nav-link,
+        .copyright {
+            font-size: 1.3rem;
+        }
+
+        .social-nav .nav-link i {
+            font-size: 2rem;
+        }
     }
 }
