@@ -1,0 +1,23 @@
+{
+  "name": "world-citizen",
+  "version": "1.0.0",
+  "description": "A cloth donation website",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isonguyom/world-citizen.git"
+  },
+  "keywords": [
+    "cloth",
+    "donation"
+  ],
+  "author": "Martin Isonguyo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/isonguyom/world-citizen/issues"
+  },
+  "homepage": "https://github.com/isonguyom/world-citizen#readme"
+}
