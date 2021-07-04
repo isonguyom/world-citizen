@@ -13,6 +13,13 @@ a:hover {
   opacity: 1 !important;
 }
 
+.btn {
+  border-radius: 40px;
+  background-color: #008B8B;
+  color: white;
+  opacity: 1 !important;
+}
+
 .btn:hover {
   background-color: #007e7e !important;
   color: white;
@@ -25,11 +32,27 @@ a:hover {
   color: white;
 }
 
-.btn {
+.donation-details .form-control {
+  background-color: #E9CACA;
+  border: 1px solid #A52A2A;
   border-radius: 40px;
-  background-color: #008B8B;
+}
+
+.form-control::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: white;
-  opacity: 1 !important;
+  /* Firefox */
+  opacity: 0.8;
+}
+
+.form-control:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: white;
+}
+
+.form-control::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: white;
 }
 
 header {
@@ -98,6 +121,11 @@ footer {
 }
 footer section {
   padding: 3em 5% !important;
+}
+
+.option-card {
+  background-color: #d478782a;
+  opacity: 0.95 !important;
 }
 
 @media screen and (min-width: 576px) {

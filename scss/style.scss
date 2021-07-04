@@ -27,6 +27,13 @@ a:hover {
     opacity: 1 !important;
 }
 
+.btn {
+    border-radius: 40px;
+    background-color: $secondary-color;
+    color: white;
+    opacity: 1 !important;
+}
+
 .btn:hover {
     background-color: $btn-hover !important;
     color: white;
@@ -38,11 +45,29 @@ a:hover {
     @include primaryBg;
 }
 
-.btn {
-    border-radius: 40px;
-    background-color: $secondary-color;
+.donation-details {
+    .form-control {
+        background-color: $bg-body;
+        border: 1px solid $primary-color;
+        border-radius: 40px;
+    }
+}
+
+.form-control::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: white;
-    opacity: 1 !important;
+    /* Firefox */
+    opacity: 0.8;
+}
+
+.form-control:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: white;
+}
+
+.form-control::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: white;
 }
 
 header {
@@ -65,7 +90,7 @@ header {
             }
 
             &:hover {
-               opacity: 1 !important;
+                opacity: 1 !important;
             }
         }
 
@@ -130,6 +155,16 @@ footer {
         padding: 3em 5% !important;
     }
 }
+
+
+// DONATION OPTION PAGE
+.option-card {
+    background-color: #d478782a;
+    opacity: 0.95 !important;
+}
+
+//DONATION DETAILS PAGE 
+
 
 @media screen and (min-width: 576px) {
     main {
