@@ -36,21 +36,13 @@ a:hover {
 
 .btn:hover {
     background-color: $btn-hover !important;
-    color: white;
+    color: white !important;
 }
 
 .header,
 .primary-bg {
     height: fit-content;
     @include primaryBg;
-}
-
-.donation-details {
-    .form-control {
-        background-color: $bg-body;
-        border: 1px solid $primary-color;
-        border-radius: 40px;
-    }
 }
 
 .form-control::placeholder {
@@ -164,7 +156,23 @@ footer {
 }
 
 //DONATION DETAILS PAGE 
+.donation-details {
+    .form-control {
+        background-color: $bg-body;
+        border: 1px solid $primary-color;
+        border-radius: 40px;
+    }
 
+    #fileUpload {
+        background-color: $bg-section1;
+    }
+
+    .btn-outline {
+        background-color: white;
+        color: $secondary-color;
+        border: 1px solid $secondary-color;
+    }
+}
 
 @media screen and (min-width: 576px) {
     main {
