@@ -2,33 +2,29 @@
 <html lang="en">
 
 <head>
-  <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Cloth donation website">
   <meta name="author" content="Martin Isonguyo">
   <!-- Lato font CDN -->
-  <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-  <!-- Iconmonstr CDN -->
-  <link href='https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lato-font/3.0.0/css/lato-font.min.css"
+    integrity="sha512-rSWTr6dChYCbhpHaT1hg2tf4re2jUxBWTuZbujxKg96+T87KQJriMzBzW5aqcb8jmzBhhNSx4XYGA6/Y+ok1vQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/style.css">
-  <title>World Cititzen</title>
+  <title>World Citizen</title>
 </head>
 
 <body>
-
-  <header class="header w-100 py-2">
-    <div class="d-flex justify-content-between align-items-center mb-2 pt-2">
-      <a class="navbar-brand w-25 mb-3 d-block" href="index.html">
-        <img src="./images/logo.png" alt="logo" class="align-text-top">
-      </a>
-      <a href="./pages/donation-options.html" class="btn btn-lg px-3 px-md-5 py-3 text-decoration-none">Donate Now</a>
+  <header class="container-fluid p-2 px-sm-3 px-md-5">
+    <div class="d-flex justify-content-between align-items-center">
+      <h1><a href="" class="fs-2 text-decoration-none text-white">World Citizen</a></h1>
+      <button type="button" class="btn text-white rounded-pill px-3 py-2 wc-btn">Donate Now</button>
     </div>
-    <nav class="navbar navbar-expand-lg navbar-dark py-2 custom-navbar px-3">
+    <nav class="navbar navbar-expand-lg navbar-dark mt-2 py-1 rounded-3">
       <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,327 +32,284 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item px-3">
-              <a class="nav-link active fw-bold text-decoration-none text-white" aria-current="page"
-                href="index.html">Home</a>
+            <li class="nav-item me-lg-5">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
-            <li class="nav-item px-3">
-              <a class="nav-link text-decoration-none text-white" href="#">Our Stories</a>
+            <li class="nav-item me-lg-5">
+              <a class="nav-link" href="#">About</a>
             </li>
-            <li class="nav-item px-3">
-              <a class="nav-link text-decoration-none text-white" href="#">Case Studies</a>
+            <li class="nav-item me-lg-5">
+              <a class="nav-link" href="#">Blog</a>
             </li>
-            <li class="nav-item px-3">
-              <a class="nav-link text-decoration-none text-white" href="#">Login</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><span class="iconify" data-icon="bx:bxs-user-circle"
+                data-width="30"></span></a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Login</a></li>
+                <li><a class="dropdown-item" href="#">Sign Up</a></li>
+              </ul>
             </li>
           </ul>
           <form class="d-flex">
-            <input class="form-control bg-transparent px-3 py-2 search-input" type="search" placeholder="Search..."
-              aria-label="Search">
-            <button class="btn d-flex align-items-center py-2" type="submit"><i class="im im-magnifier"></i>
-            </button>
+            <input class="form-control rounded-0 rounded-start border-white-50 bg-transparent border-end-0"
+              type="search" placeholder="Search" aria-label="Search">
+            <button class="btn text-white rounded-0 rounded-end wc-bg" type="submit"><span class="iconify"
+                data-icon="ri:search-fill"></span></button>
           </form>
         </div>
       </div>
     </nav>
   </header>
-
   <main>
-    <section class="onboarding w-100 container-fluid d-flex align-items-center justify-content-center">
-      <div class="card bg-transparent text-white text-center border-0">
-        <div class="card-body">
-          <h2 class="card-title mb-5 mb-md-5 display-4 lh-sm"><strong>A cloth could mean so much to <br> someone,
-              somewhere.</strong></h2>
-          <a href="./pages/donation-options.html" class="btn btn-lg px-4 px-md-5 py-3 text-decoration-none">Donate
-            Now</a>
-        </div>
+    <section class="onboarding container-fluid d-flex align-items-center">
+      <div class="mx-auto text-center col-sm-10 col-md-8 col-lg-6">
+        <h2 class="text-white align-middle fs-1 mb-5">A cloth could mean so much to someone, somewhere.</h2>
+        <button type="button" class="btn text-white rounded-pill px-3 py-2 wc-btn">Donate Now</button>
       </div>
     </section>
-
-    <section class="position-relative container-fluid text-center">
-      <h4 class="text-uppercase mb-5">our donation options</h4>
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
-        <div class="col">
-          <div class="card h-100 py-5 px-2 px-md-3 border-0 card1-bg">
-            <img src="./images/iconmonstr-home.svg" class="card-img-top w-25 mx-auto mb-3" alt="home icon">
-            <div class="card-body">
-              <h5 class="card-title">Home Collection</h5>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe amet, maxime suscipit
-                deserunt corporis voluptas.
-              </p>
-            </div>
+    <section class="container-fluid py-5 px-sm-3 px-md-5 text-center">
+      <h4 class="text-center mb-4 fs-4">Our Donation Options</h4>
+      <div class="row px-md-5">
+        <div class="col-sm-6 wc-bg">
+          <div class="card-body py-5 px-sm-1 px-lg-5">
+            <span class="iconify mb-2" data-icon="ant-design:home-filled" style="color: white;" data-width="150"></span>
+            <h5 class="card-title">Home Pickup</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus in at
+              egestas turpis iaculis in nisi montes, massa. Dolor enim mattis enim tincidunt in rhoncus urna elit .</p>
           </div>
         </div>
-        <div class="col">
-          <div class="card h-100 py-5 px-2 px-md-3 border-0 mx-lg-auto card1-bg">
-            <img src="./images/iconmonstr-donation-center.svg" class="card-img-top w-25 mx-auto mb-3"
-              alt="donation center icon">
-            <div class="card-body">
-              <h5 class="card-title">Donation Center</h5>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe amet, maxime suscipit
-                deserunt corporis voluptas.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100 py-5 px-2 px-md-3 border-0 card1-bg float-lg-end">
-            <img src="./images/iconmonstr-local-council.svg" class="card-img-top w-25 mx-auto mb-3"
-              alt="local council icon">
-            <div class="card-body">
-              <h5 class="card-title">Local Council</h5>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe amet, maxime suscipit
-                deserunt corporis voluptas.
-              </p>
-            </div>
+        <div class="col-sm-6 wc-border">
+          <div class="card-body py-5 px-sm-1 px-lg-5 wc-color">
+            <span class="iconify mb-2" data-icon="mdi:office-building-marker" style="color: brown;"
+              data-width="150"></span>
+            <h5 class="card-title">Donation center</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus in at egestas turpis
+              iaculis in nisi montes, massa. Dolor enim mattis enim tincidunt in rhoncus urna elit .</p>
           </div>
         </div>
       </div>
     </section>
-
-    <section class="container-fluid">
-      <h4 class="text-uppercase mb-5 text-center">our Stories</h4>
-      <div class="card-group flex-column">
-        <div class="card mb-3 w-100 primary-bg shadow-sm card2 border-0">
-          <div class="row align-items-center ">
-            <div class="col-sm-6 card2-img">
-              <img src="./images/Elit Etiam.jpg" class="w-100" alt="Elit Etiam">
-            </div>
-            <div class="col-sm-6">
-              <div class="card-body px-lg-5">
-                <h5 class="card-title text-capitalize">Elit etiam</h5>
-                <p class="card-text">
-                  Arcu eget adipiscing mauris sit sagittis sapien. Id fringilla netus consectetur elementum, mi.
-                  Interdum tincidunt est scelerisque at justo, eu sed commodo proin. Et pellentesque ultrices quis in
-                  condimentum nibh nibh.
-                </p>
-              </div>
+    <section class="container-fluid py-5 px-sm-3 px-md-5 text-center">
+      <h4 class="text-center mb-4 fs-4">Our Stories</h4>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 text-start">
+        <div class="col">
+          <div class="card h-100 border-0 wc-box-shadow">
+            <img src="./images/Elit Etiam.jpg" class="card-img-top h-75 mb-3" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"><a href="" class="card-title text-decoration-none text-dark">Feugiat bibendum nec</a></h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus in at egestas
+                turpis iaculis in nisi .</p>
             </div>
           </div>
         </div>
-        <div class="card mb-3 w-100 primary-bg shadow-sm card2 border-0">
-          <div class="row align-items-center">
-            <div class="col-sm-6 card2-img">
-              <img src="./images/Neque Quam.jpg" class="w-100" alt="Neque Quam">
-            </div>
-            <div class="col-sm-6">
-              <div class="card-body px-lg-5">
-                <h5 class="card-title text-capitalize">Neque quam</h5>
-                <p class="card-text">
-                  Arcu eget adipiscing mauris sit sagittis sapien. Id fringilla netus consectetur elementum, mi.
-                  Interdum tincidunt est scelerisque at justo, eu sed commodo proin. Et pellentesque ultrices quis in
-                  condimentum nibh nibh.
-                </p>
-              </div>
+        <div class="col">
+          <div class="card h-100 border-0 wc-box-shadow">
+            <img src="./images/Neque Quam.jpg" class="card-img-top h-75 mb-3" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"><a href="" class="card-title text-decoration-none text-dark">Condimentum nisl dui</a></h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus in at egestas
+                turpis iaculis in nisi .</p>
             </div>
           </div>
         </div>
-        <div class="card mb-3 w-100 primary-bg shadow-sm card2 border-0">
-          <div class="row align-items-center">
-            <div class="col-sm-6 card2-img">
-              <img src="./images/Urna Congue.jpg" class="w-100" alt="Urna Congue">
-            </div>
-            <div class="col-sm-6">
-              <div class="card-body px-lg-5">
-                <h5 class="card-title text-capitalize">Urna congue</h5>
-                <p class="card-text">
-                  Arcu eget adipiscing mauris sit sagittis sapien. Id fringilla netus consectetur elementum, mi.
-                  Interdum tincidunt est scelerisque at justo, eu sed commodo proin. Et pellentesque ultrices quis in
-                  condimentum nibh nibh.
-                </p>
-              </div>
+        <div class="col">
+          <div class="card h-100 border-0 wc-box-shadow">
+            <img src="./images/Urna Congue.jpg" class="card-img-top h-75 mb-3" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"><a href="" class="card-title text-decoration-none text-dark">Scelerisque et</a></h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus in at egestas
+                turpis iaculis in nisi .</p>
             </div>
           </div>
         </div>
       </div>
+      <button type="button" class="btn mt-5 rounded-pill px-3 py-2 wc-btn-outline">Read More</button>
     </section>
-
-    <section class="container-fluid text-center primary-bg">
-      <h4 class="text-uppercase mb-5 text-center">donors of the month</h4>
+    <section class="container-fluid py-5 px-sm-3 px-md-5 text-center wc-bg">
+      <h4 class="text-center mb-4 fs-4">Top Donors</h4>
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
         <div class="col">
-          <div class="card h-100 py-3 bg-transparent border-0 float-sm-start card3">
-            <img src="./images/paul-abel.jpg" class="card-img-top rounded-circle d-block mx-auto" alt="Paul Abel">
-            <div class="card-body mt-2">
-              <h6 class="card-title text-uppercase">Paul abel</h6>
+          <div class="card h-100 border-0 bg-transparent">
+            <img src="./images/ayo-ogunseinde-6W4F62sN_yI-unsplash.jpg" class="card-img-top wc-portrait rounded-circle mx-auto mb-3" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-uppercase text-center fs-6">Jane Cooper</h5>
             </div>
           </div>
         </div>
         <div class="col">
-          <div class="card h-100 py-3 bg-transparent border-0 float-sm-end float-md-none card3">
-            <img src="./images/john-wick.jpg" class="card-img-top rounded-circle d-block mx-auto" alt="john Wick">
-            <div class="card-body mt-2">
-              <h6 class="card-title text-uppercase">john wick</h6>
+          <div class="card h-100 border-0 bg-transparent">
+            <img src="./images/albert-dera-ILip77SbmOE-unsplash.jpg" class="card-img-top wc-portrait rounded-circle mx-auto mb-3" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-uppercase fs-6">Wade Warren</h5>
             </div>
           </div>
         </div>
         <div class="col">
-          <div class="card h-100 py-3 bg-transparent border-0 float-sm-start float-md-end card3">
-            <img src="./images/linda-scot.jpg" class="card-img-top rounded-circle d-block mx-auto" alt="Linda Scot">
-            <div class="card-body mt-2">
-              <h6 class="card-title text-uppercase">linda scot</h6>
+          <div class="card h-100 border-0 bg-transparent">
+            <img src="./images/jonathan-borba-1fy0kwwfBRE-unsplash.jpg" class="card-img-top wc-portrait rounded-circle mx-auto mb-3" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-uppercase fs-6">Esther Howard</h5>
             </div>
           </div>
         </div>
         <div class="col">
-          <div class="card h-100 py-3 bg-transparent border-0 float-sm-end float-md-start card3">
-            <img src="./images/grey-walter.jpg" class="card-img-top rounded-circle d-block mx-auto" alt="Grey Walter">
-            <div class="card-body mt-2">
-              <h6 class="card-title text-uppercase">grey walter</h6>
+          <div class="card h-100 border-0 bg-transparent">
+            <img src="./images/kim-carpenter-IHIgnhLvz5Q-unsplash.jpg" class="card-img-top wc-portrait rounded-circle mx-auto mb-3" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-uppercase fs-6">Kathryn Murphy</h5>
             </div>
           </div>
         </div>
         <div class="col">
-          <div class="card h-100 py-3 bg-transparent border-0 float-sm-start float-md-none card3">
-            <img src="./images/gloria-augis.jpg" class="card-img-top rounded-circle d-block mx-auto" alt="Gloria Augis">
-            <div class="card-body mt-2">
-              <h6 class="card-title text-uppercase">Gloria Augis</h6>
+          <div class="card h-100 border-0 bg-transparent">
+            <img src="./images/andres-hernandez-O5_adohk29M-unsplash.jpg" class="card-img-top wc-portrait rounded-circle mx-auto mb-3" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-uppercase fs-6">Marvin McKinney</h5>
             </div>
           </div>
         </div>
         <div class="col">
-          <div class="card h-100 py-3 bg-transparent border-0 float-sm-end card3">
-            <img src="./images/uwem-sunday.jpg" class="card-img-top rounded-circle d-block mx-auto" alt="Uwem Sunday">
-            <div class="card-body mt-2">
-              <h6 class="card-title text-uppercase">Uwem sunday</h6>
+          <div class="card h-100 border-0 bg-transparent">
+            <img src="./images/harishan-kobalasingam-8PMvB4VyVXA-unsplash.jpg" class="card-img-top wc-portrait rounded-circle mx-auto mb-3" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-uppercase fs-6">Devon Lane</h5>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <section class="container-fluid py-5 px-sm-3 px-md-5 text-center">
+      <h4 class="text-center text-center mb-4 fs-4">Our Blog</h4>
 
-    <section class="container-fluid section1-bg">
-      <h4 class="text-uppercase mb-5 text-center">case studies</h4>
-      <div class="row g-4">
-        <div class="col-sm-6">
-          <div class="card border-0 card4">
-            <img src="./images/Sapien pharetra.jpg" class="card-img" alt="Sapien pharetra">
-            <div class="card-img-overlay d-flex align-items-center justify-content-center">
-              <h5 class="card-title text-center"><a href="#" class="text-white text-decoration-none">Sapien
-                  pharetra.</a></h5>
+      <div class="row row-cols-1 row-cols-sm-2 g-5">
+        <div class="col wc-card-h">
+          <div class="card bg-dark text-white border-0 h-100">
+            <img src="./images/Sapien pharetra.jpg" class="card-img h-100" alt="...">
+            <div class="card-img-overlay h-100 d-flex align-items-center justify-content-center">
+              <h5 class="card-title"><a href="" class="card-title text-decoration-none text-white">In odio interdum fermentum</a></h5>
             </div>
           </div>
         </div>
-        <div class="col-sm-6">
-          <div class="card bg-dark border-0 card4">
-            <img src="./images/Tortor ante facilisis.jpg" class="card-img" alt="Tortor ante facilisis">
-            <div class="card-img-overlay d-flex align-items-center justify-content-center">
-              <h5 class="card-title"><a href="#" class="text-decoration-none text-white">Tortor ante facilisis</a></h5>
+        <div class="col wc-card-h">
+          <div class="card bg-dark text-white border-0 h-100">
+            <img src="./images/seth-doyle-zf9_yiAekJs-unsplash.jpg" class="card-img h-100" alt="...">
+            <div class="card-img-overlay h-100 d-flex align-items-center justify-content-center">
+              <h5 class="card-title"><a href="" class="card-title text-decoration-none text-white">Nisl pellentesque cursus</a></h5>
             </div>
           </div>
         </div>
-        <div class="col-sm-6">
-          <div class="card bg-dark text-white border-0 card4">
-            <img src="./images/Vestibulum rutrum.jpg" class="card-img" alt="Vestibulum rutrum">
-            <div class="card-img-overlay d-flex align-items-center justify-content-center">
-              <h5 class="card-title"><a href="#" class="text-decoration-none text-white">Vestibulum rutrum</a></h5>
+        <div class="col wc-card-h">
+          <div class="card bg-dark text-white border-0 h-100">
+            <img src="./images/Vestibulum rutrum.jpg" class="card-img h-100" alt="...">
+            <div class="card-img-overlay h-100 d-flex align-items-center justify-content-center">
+              <h5 class="card-title"><a href="" class="card-title text-decoration-none text-white">Consectetur quis</a></h5>
             </div>
           </div>
         </div>
-        <div class="col-sm-6">
-          <div class="card bg-dark text-white border-0 card4">
-            <img src="./images/Non proin.jpg" class="card-img" alt="Non proin">
-            <div class="card-img-overlay d-flex align-items-center justify-content-center">
-              <h5 class="card-title"><a href="#" class="text-decoration-none text-white">Non proin</a></h5>
+        <div class="col wc-card-h">
+          <div class="card bg-dark text-white border-0 h-100">
+            <img src="./images/Non proin.jpg" class="card-img h-100" alt="...">
+            <div class="card-img-overlay h-100 d-flex align-items-center justify-content-center">
+              <h5 class="card-title"><a href="" class="card-title text-decoration-none text-white">Arcu dolor morbi</a></h5>
             </div>
           </div>
         </div>
       </div>
-
+      <button type="button" class="btn mt-5 rounded-pill px-3 py-2 wc-btn-outline">Read More</button>
     </section>
-
   </main>
-  <footer>
-    <section class="container-fluid pt-4 pb-2">
-      <div class="card-group">
-        <div class="card bg-transparent border-0 mb-3">
-          <div class="card-body">
-            <h5 class="card-title text-uppercase text-white mb-3">Contact</h5>
-            <address>
-              Head Office: 5, Web
-              Street, Uyo, Nigeria. <br>
-              Tel: 00000000000 <br>
-              Email: support@worldcitizen.org
-            </address>
-            <nav class="nav mt-4 mt-sm-5 social-nav">
-              <a class="nav-link ps-0 text-white" href="#"><i class="im im-twitter"></i></a>
-              <a class="nav-link text-white" href="#"><i class="im im-instagram"></i></a>
-              <a class="nav-link text-white" href="#"><i class="im im-facebook"></i></a>
-              <a class="nav-link text-white" href="#"><i class="im im-linkedin"></i></a>
-            </nav>
-          </div>
-        </div>
-        <div class="card bg-transparent border-0 mb-3 text-sm-center">
-          <div class="card-body">
-            <h5 class="card-title text-uppercase text-white mb-3">Links</h5>
-            <nav class="nav flex-column">
-              <a class="nav-link text-white ps-0" href="#">About</a>
-              <a class="nav-link text-white ps-0" href="#">Contact</a>
-              <a class="nav-link text-white ps-0" href="#">Top Donors</a>
-              <a class="nav-link text-white ps-0" href="#">Stories</a>
-              <a class="nav-link text-white ps-0" href="#">Case Studies</a>
-              <a class="nav-link text-white ps-0" href="#">Terms of Use</a>
-              <a class="nav-link text-white ps-0" href="#">Privacy Policy</a>
-              <a class="nav-link text-white ps-0" href="#">Donation Centers</a>
-            </nav>
-          </div>
-        </div>
-        <div class="card bg-transparent border-0 text-sm-end">
-          <div class="card-body">
-            <h5 class="card-title text-uppercase text-white mb-3">Partners</h5>
-            <div class="row">
-              <div class="col-6 p-3 p-lg-4 mb-md-3">
-                <a href="#">
-                  <img class="w-75" src="./images/fedex.png" alt="FedEx">
-                </a>
-              </div>
-              <div class="col-6 p-3 p-lg-4 mb-md-3">
-                <a href="#">
-                  <img class="w-75" src="./images/gokada.png" alt="Gokada">
-                </a>
-              </div>
-              <div class="col-6 p-3 p-lg-4 mb-md-3">
-                <a href="#">
-                  <img class="w-75" src="./images/wash-junkie.png" alt="Walkie junkie">
-                </a>
-              </div>
-              <div class="col-6 p-3 p-lg-4 mb-md-3">
-                <a href="#">
-                  <img class="w-75" src="./images/aystitches.png" alt="aystitches">
-                </a>
-              </div>
-              <div class="col-6 p-3 p-lg-4 mb-md-3">
-                <a href="#">
-                  <img class="w-75" src="./images/nigeria-good-people-great-nation.png" alt="good people great nation">
-                </a>
-              </div>
-              <div class="col-6 p-3 p-lg-4 mb-md-3">
-                <a href="#">
-                  <img class="w-50" src="./images/nigeria-coat-of-arm.png" alt="nigeria coat of arm">
-                </a>
-              </div>
-            </div>
+  <footer class="container-fluid py-5 px-sm-3 px-md-5">
+    <div class="card-group">
+      <div class="card bg-transparent border-0">
+        <div class="card-body">
+          <h5 class="card-title">Contact Us </h5>
+          <address class="d-flex">
+            <span class="fw-bold me-2">
+              Head Office: <br>
+              Tel: <br>
+              Email:
+            </span>
+            <span>
+              5, Web Street, Uyo, Nigeria. <br>
+              +123456789 <br>
+              support@worldcitizen.org
+            </span>
+          </address>
+          <div class="nav mt-4">
+            <a href="#" class="card-link"><span class="iconify" data-icon="ant-design:twitter-circle-filled"
+                style="color: white;" data-width="40"></span></a>
+            <a href="#" class="card-link"><span class="iconify" data-icon="ant-design:instagram-filled"
+                style="color: white;" data-width="40"></span></span></a>
+            <a href="#" class="card-link"><span class="iconify" data-icon="bi:facebook" style="color: white;"
+                data-width="40"></span></a>
+            <a href="#" class="card-link"><span class="iconify" data-icon="entypo-social:linkedin-with-circle"
+                style="color: white;" data-width="40"></span></a>
           </div>
         </div>
       </div>
-    </section>
-    <section class="container-fluid py-2">
-      <p class="text-center text-white copyright">© Copyright 2021 worldcitizen.org</p>
-    </section>
+      <div class="card bg-transparent border-0">
+        <div class="card-body">
+          <h5 class="card-title">Links </h5>
+          <div class="nav flex-column">
+            <a class="nav-link text-decoration-none text-white p-0" href="#">About Us</a>
+            <a class="nav-link text-decoration-none text-white p-0" href="#">Rewards</a>
+            <a class="nav-link text-decoration-none text-white p-0" href="#">Stories</a>
+            <a class="nav-link text-decoration-none text-white p-0" href="#">Blog</a>
+            <a class="nav-link text-decoration-none text-white p-0" href="#">Donation Centers</a>
+            <a class="nav-link text-decoration-none text-white p-0" href="#">FAQs</a>
+            <a class="nav-link text-decoration-none text-white p-0" href="#">Privacy Policy</a>
+            <a class="nav-link text-decoration-none text-white p-0" href="#">Top Donors</a>
+          </div>
+        </div>
+      </div>
+      <div class="card bg-transparent border-0">
+        <h5 class="card-title">Partners </h5>
+        <div class="row row-cols-1 row-cols-md-2 g-4 card-body">
+          <div class="col">
+            <div class="card bg-transparent border-0">
+              <a href=""><img src="./images/wash-junkie.png" class="card-img w-75" alt="..."></a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card bg-transparent border-0">
+              <a href=""><img src="./images/aystitches.png" class="card-img w-75" alt="..."></a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card bg-transparent border-0">
+              <a href=""><img src="./images/fedex.png" class="card-img w-75" alt="..."></a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card bg-transparent border-0">
+              <a href=""><img src="./images/gokada.png" class="card-img" alt="..."></a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card bg-transparent border-0">
+              <a href=""><img src="./images/nigeria-good-people-great-nation.png" class="card-img w-50" alt="..."></a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card bg-transparent border-0">
+              <a href=""><img src="./images/nigeria-coat-of-arm.png" class="card-img w-50" alt="..."></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="text-center pt-3">
+      © copyright 2021 worldcitizen.org
+    </div>
   </footer>
 
-
-
-
-  <!--Bootstrap Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+  <!-- Iconify -->
+  <script src="https://code.iconify.design/2/2.0.4/iconify.min.js"></script>
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
-
-
 </body>
 
 </html>
