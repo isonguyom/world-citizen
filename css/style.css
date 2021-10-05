@@ -8,22 +8,31 @@ body {
   font-family: var(--wc-font);
 }
 
-header, footer, .wc-bg {
+header,
+footer,
+.wc-bg {
   background: var(--wc-color);
   color: white;
 }
 
+/* World Citizen custom styling */
 .wc-color {
   color: var(--wc-color);
 }
 
-.wc-btn {
+.wc-btn, .wc-sec-bg {
   background: var(--wc-sec-color);
 }
 
 .wc-btn-outline {
   border: 1px solid var(--wc-sec-color);
   color: var(--wc-sec-color);
+}
+
+.wc-btn:hover,
+.wc-btn-outline:hover {
+  background: #144e4e;
+  color: white;
 }
 
 .wc-border {
@@ -35,12 +44,39 @@ header, footer, .wc-bg {
 }
 
 .wc-portrait {
-  height: 200px;
-  width: 200px;
+  height: 10em;
+  width: 10em;
 }
 
 .wc-card-h {
   height: 300px;
+}
+
+.wc-about-bg {
+  height: 30vh;
+  background: url("../images/sarah-brown-oa7pqZmmhuA-unsplash.jpg") center;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.726);
+  background-blend-mode: soft-light;
+  z-index: -1;
+}
+
+.wc-about {
+  margin-top: -80px !important;
+  z-index: 1 !important;
+}
+
+.wc-about-base {
+  height: fit-content;
+  margin-top: 200px;
+}
+
+.wc-about-base img {
+  height: 30vh;
+}
+
+.word-break {
+  word-break: break-all;
 }
 
 p {
@@ -66,9 +102,9 @@ input[type="search"]::placeholder {
 }
 
 section.onboarding {
-  background-color: rgba(0, 0, 0, 0.952);
   background: url("../images/landing-page.jpg") center;
   background-size: cover;
+  background-color: rgba(0, 0, 0, 0.726);
   background-blend-mode: soft-light;
   min-height: 80vh;
 }
