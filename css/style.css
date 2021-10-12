@@ -75,6 +75,26 @@ footer,
   height: 30vh;
 }
 
+.wc-form-bg {
+  background: url("../images/landing-page.jpg") center fixed;
+  background-size: cover;
+  height: fit-content;
+}
+
+/* hr */
+.wc-hr-line {
+  margin: 15px;
+  width: 70px;
+}
+.wc-hr-text {
+  top: 3px;
+}
+
+.wc-ml-n5 {
+  margin-left: -2.8em !important;
+  z-index: 100 !important;
+}
+
 .word-break {
   word-break: break-all;
 }
@@ -114,3 +134,4 @@ section.onboarding {
     height: 350px;
   }
 }
+

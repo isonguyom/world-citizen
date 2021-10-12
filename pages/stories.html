@@ -2,34 +2,29 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Cloth donation website">
     <meta name="author" content="Martin Isonguyo">
     <!-- Lato font CDN -->
-    <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-    <!-- Iconmonstr CDN -->
-    <link href='https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lato-font/3.0.0/css/lato-font.min.css"
+        integrity="sha512-rSWTr6dChYCbhpHaT1hg2tf4re2jUxBWTuZbujxKg96+T87KQJriMzBzW5aqcb8jmzBhhNSx4XYGA6/Y+ok1vQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
-    <title>World Cititzen</title>
+    <title>World Citizen - Stories Page</title>
 </head>
 
 <body>
-
-    <header class="header w-100 py-2">
-        <div class="d-flex justify-content-between align-items-center mb-2 pt-2">
-            <a class="navbar-brand w-25 mb-3 d-block" href="index.html">
-                <img src="../images/logo.png" alt="logo" class="align-text-top">
-            </a>
-            <a href="./pages/donation-options.html" class="btn btn-lg px-3 px-md-5 py-3 text-decoration-none">Donate
-                Now</a>
+    <header class="container-fluid p-2 px-sm-3 px-md-5">
+        <div class="d-flex justify-content-between align-items-center">
+            <h1><a href="../index.html" class="fs-2 text-decoration-none text-white">World Citizen</a></h1>
+            <button type="button" class="btn text-white rounded-pill px-3 py-2 wc-btn">Donate Now</button>
         </div>
-        <nav class="navbar navbar-expand-lg navbar-dark py-2 custom-navbar px-3">
+        <nav class="navbar navbar-expand-lg navbar-dark mt-2 py-1 rounded-3">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -38,220 +33,221 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item px-3">
-                            <a class="nav-link active fw-bold text-decoration-none text-white" aria-current="page"
-                                href="index.html">Home</a>
+                        <li class="nav-item me-lg-5">
+                            <a class="nav-link" href="../index.html">Home</a>
                         </li>
-                        <li class="nav-item px-3">
-                            <a class="nav-link text-decoration-none text-white" href="#">Our Stories</a>
+                        <li class="nav-item me-lg-5">
+                            <a class="nav-link" href="./about.html">About</a>
                         </li>
-                        <li class="nav-item px-3">
-                            <a class="nav-link text-decoration-none text-white" href="#">Case Studies</a>
+                        <li class="nav-item me-lg-5">
+                            <a class="nav-link" href="./blog.html">Blog</a>
                         </li>
-                        <li class="nav-item px-3">
-                            <a class="nav-link text-decoration-none text-white" href="#">Login</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active" data-bs-toggle="dropdown" aria-current="page" href="#" role="button"
+                                aria-expanded="false"><span class="iconify" data-icon="bx:bxs-user-circle"
+                                    data-width="30"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item active" aria-current="page" href="./login.html">Login</a></li>
+                                <li><a class="dropdown-item" href="#">Sign Up</a></li>
+                            </ul>
                         </li>
                     </ul>
                     <form class="d-flex">
-                        <input class="form-control bg-transparent px-3 py-2 search-input" type="search"
-                            placeholder="Search..." aria-label="Search">
-                        <button class="btn d-flex align-items-center py-2" type="submit"><i class="im im-magnifier"></i>
-                        </button>
+                        <input class="form-control rounded-0 rounded-start border-white-50 bg-transparent border-end-0"
+                            type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn text-white rounded-0 rounded-end wc-bg" type="submit"><span class="iconify"
+                                data-icon="ri:search-fill"></span></button>
                     </form>
                 </div>
             </div>
         </nav>
     </header>
-
     <main>
+        <section class="container-fluid py-5 px-sm-3 px-md-5 text-center">
+            <h2 class="text-center text-center mb-4 fs-4">Our Stories</h2>
 
-        <section class="container-fluid">
-            <h4 class="text-uppercase mb-5 text-center">our Stories</h4>
-            <div class="card-group flex-column">
-                <div class="card mb-3 w-100 primary-bg shadow-sm card2 border-0">
-                    <div class="row align-items-center ">
-                        <div class="col-sm-6 card2-img">
-                            <img src="../images/Elit Etiam.jpg" class="w-100" alt="Elit Etiam">
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="card-body px-lg-5">
-                                <h5 class="card-title text-capitalize">Elit etiam</h5>
-                                <p class="card-text">
-                                    Arcu eget adipiscing mauris sit sagittis sapien. Id fringilla netus consectetur
-                                    elementum, mi.
-                                    Interdum tincidunt est scelerisque at justo, eu sed commodo proin. Et pellentesque
-                                    ultrices quis in
-                                    condimentum nibh nibh.
-                                </p>
-                            </div>
-                        </div>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 text-start">
+                <div class="col">
+                  <div class="card h-100 border-0 wc-box-shadow">
+                    <img src="../images/Elit Etiam.jpg" class="card-img-top h-75 mb-3" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title"><a href="" class="card-title text-decoration-none text-dark">Feugiat bibendum
+                          nec</a></h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus in at egestas
+                        turpis iaculis in nisi .</p>
                     </div>
+                  </div>
                 </div>
-                <div class="card mb-3 w-100 primary-bg shadow-sm card2 border-0">
-                    <div class="row align-items-center">
-                        <div class="col-sm-6 card2-img">
-                            <img src="../images/Neque Quam.jpg" class="w-100" alt="Neque Quam">
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="card-body px-lg-5">
-                                <h5 class="card-title text-capitalize">Neque quam</h5>
-                                <p class="card-text">
-                                    Arcu eget adipiscing mauris sit sagittis sapien. Id fringilla netus consectetur
-                                    elementum, mi.
-                                    Interdum tincidunt est scelerisque at justo, eu sed commodo proin. Et pellentesque
-                                    ultrices quis in
-                                    condimentum nibh nibh.
-                                </p>
-                            </div>
-                        </div>
+                <div class="col">
+                  <div class="card h-100 border-0 wc-box-shadow">
+                    <img src="../images/Neque Quam.jpg" class="card-img-top h-75 mb-3" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title"><a href="" class="card-title text-decoration-none text-dark">Condimentum nisl
+                          dui</a></h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus in at egestas
+                        turpis iaculis in nisi .</p>
                     </div>
+                  </div>
                 </div>
-                <div class="card mb-3 w-100 primary-bg shadow-sm card2 border-0">
-                    <div class="row align-items-center">
-                        <div class="col-sm-6 card2-img">
-                            <img src="../images/Urna Congue.jpg" class="w-100" alt="Urna Congue">
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="card-body px-lg-5">
-                                <h5 class="card-title text-capitalize">Urna congue</h5>
-                                <p class="card-text">
-                                    Arcu eget adipiscing mauris sit sagittis sapien. Id fringilla netus consectetur
-                                    elementum, mi.
-                                    Interdum tincidunt est scelerisque at justo, eu sed commodo proin. Et pellentesque
-                                    ultrices quis in
-                                    condimentum nibh nibh.
-                                </p>
-                            </div>
-                        </div>
+                <div class="col">
+                  <div class="card h-100 border-0 wc-box-shadow">
+                    <img src="../images/Urna Congue.jpg" class="card-img-top h-75 mb-3" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title"><a href="" class="card-title text-decoration-none text-dark">Scelerisque et</a>
+                      </h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus in at egestas
+                        turpis iaculis in nisi .</p>
                     </div>
+                  </div>
                 </div>
-                <div class="card mb-3 w-100 primary-bg shadow-sm card2 border-0">
-                    <div class="row align-items-center">
-                        <div class="col-sm-6 card2-img">
-                            <img src="../images/Neque Quam.jpg" class="w-100" alt="Neque Quam">
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="card-body px-lg-5">
-                                <h5 class="card-title text-capitalize">Neque quam</h5>
-                                <p class="card-text">
-                                    Arcu eget adipiscing mauris sit sagittis sapien. Id fringilla netus consectetur
-                                    elementum, mi.
-                                    Interdum tincidunt est scelerisque at justo, eu sed commodo proin. Et pellentesque
-                                    ultrices quis in
-                                    condimentum nibh nibh.
-                                </p>
-                            </div>
-                        </div>
+                <div class="col">
+                  <div class="card h-100 border-0 wc-box-shadow">
+                    <img src="../images/dino-reichmuth-A5rCN8626Ck-unsplash.jpg" class="card-img-top h-75 mb-3" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title"><a href="" class="card-title text-decoration-none text-dark">Interdum velit felis</a></h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus in at egestas
+                        turpis iaculis in nisi .</p>
                     </div>
+                  </div>
                 </div>
-                <div class="card mb-3 w-100 primary-bg shadow-sm card2 border-0">
-                    <div class="row align-items-center">
-                        <div class="col-sm-6 card2-img">
-                            <img src="../images/Urna Congue.jpg" class="w-100" alt="Urna Congue">
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="card-body px-lg-5">
-                                <h5 class="card-title text-capitalize">Urna congue</h5>
-                                <p class="card-text">
-                                    Arcu eget adipiscing mauris sit sagittis sapien. Id fringilla netus consectetur
-                                    elementum, mi.
-                                    Interdum tincidunt est scelerisque at justo, eu sed commodo proin. Et pellentesque
-                                    ultrices quis in
-                                    condimentum nibh nibh.
-                                </p>
-                            </div>
-                        </div>
+                <div class="col">
+                  <div class="card h-100 border-0 wc-box-shadow">
+                    <img src="../images/su-nyoto-kY8m5uDIW7Y-unsplash.jpg" class="card-img-top h-75 mb-3" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title"><a href="" class="card-title text-decoration-none text-dark">Purus egestas</a></h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus in at egestas
+                        turpis iaculis in nisi .</p>
                     </div>
+                  </div>
                 </div>
-            </div>
+                <div class="col">
+                  <div class="card h-100 border-0 wc-box-shadow">
+                    <img src="../images/cytonn-photography-n95VMLxqM2I-unsplash.jpg" class="card-img-top h-75 mb-3" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title"><a href="" class="card-title text-decoration-none text-dark">Blandit vulputate mattis</a>
+                      </h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus in at egestas
+                        turpis iaculis in nisi .</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100 border-0 wc-box-shadow">
+                    <img src="../images/zach-vessels-jLbmY5Zp7UQ-unsplash.jpg" class="card-img-top h-75 mb-3" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title"><a href="" class="card-title text-decoration-none text-dark">Facilisis a</a></h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus in at egestas
+                        turpis iaculis in nisi .</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100 border-0 wc-box-shadow">
+                    <img src="../images/akshar-dave-b5UILRPGV_g-unsplash.jpg" class="card-img-top h-75 mb-3" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title"><a href="" class="card-title text-decoration-none text-dark">Maecenas vitae risus</a></h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus in at egestas
+                        turpis iaculis in nisi .</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100 border-0 wc-box-shadow">
+                    <img src="../images/bruce-mars-AndE50aaHn4-unsplash.jpg" class="card-img-top h-75 mb-3" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title"><a href="" class="card-title text-decoration-none text-dark">Interdum natoque</a>
+                      </h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus in at egestas
+                        turpis iaculis in nisi .</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
         </section>
-
     </main>
-    <footer>
-        <section class="container-fluid pt-4 pb-2">
-            <div class="card-group">
-                <div class="card bg-transparent border-0 mb-3">
-                    <div class="card-body">
-                        <h5 class="card-title text-uppercase text-white mb-3">Contact</h5>
-                        <address>
-                            Head Office: 5, Web
-                            Street, Uyo, Nigeria. <br>
-                            Tel: 00000000000 <br>
-                            Email: support@worldcitizen.org
-                        </address>
-                        <nav class="nav mt-4 mt-sm-5 social-nav">
-                            <a class="nav-link ps-0 text-white" href="#"><i class="im im-twitter"></i></a>
-                            <a class="nav-link text-white" href="#"><i class="im im-instagram"></i></a>
-                            <a class="nav-link text-white" href="#"><i class="im im-facebook"></i></a>
-                            <a class="nav-link text-white" href="#"><i class="im im-linkedin"></i></a>
-                        </nav>
-                    </div>
-                </div>
-                <div class="card bg-transparent border-0 mb-3 text-sm-center">
-                    <div class="card-body">
-                        <h5 class="card-title text-uppercase text-white mb-3">Links</h5>
-                        <nav class="nav flex-column">
-                            <a class="nav-link text-white ps-0" href="#">About</a>
-                            <a class="nav-link text-white ps-0" href="#">Contact</a>
-                            <a class="nav-link text-white ps-0" href="#">Top Donors</a>
-                            <a class="nav-link text-white ps-0" href="#">Stories</a>
-                            <a class="nav-link text-white ps-0" href="#">Case Studies</a>
-                            <a class="nav-link text-white ps-0" href="#">Terms of Use</a>
-                            <a class="nav-link text-white ps-0" href="#">Privacy Policy</a>
-                            <a class="nav-link text-white ps-0" href="#">Donation Centers</a>
-                        </nav>
-                    </div>
-                </div>
-                <div class="card bg-transparent border-0 text-sm-end">
-                    <div class="card-body">
-                        <h5 class="card-title text-uppercase text-white mb-3">Partners</h5>
-                        <div class="row">
-                            <div class="col-6 p-3 p-lg-4 mb-md-3">
-                                <a href="#">
-                                    <img class="w-75" src="../images/fedex.png" alt="FedEx">
-                                </a>
-                            </div>
-                            <div class="col-6 p-3 p-lg-4 mb-md-3">
-                                <a href="#">
-                                    <img class="w-75" src="../images/gokada.png" alt="Gokada">
-                                </a>
-                            </div>
-                            <div class="col-6 p-3 p-lg-4 mb-md-3">
-                                <a href="#">
-                                    <img class="w-75" src="../images/wash-junkie.png" alt="Walkie junkie">
-                                </a>
-                            </div>
-                            <div class="col-6 p-3 p-lg-4 mb-md-3">
-                                <a href="#">
-                                    <img class="w-75" src="../images/aystitches.png" alt="aystitches">
-                                </a>
-                            </div>
-                            <div class="col-6 p-3 p-lg-4 mb-md-3">
-                                <a href="#">
-                                    <img class="w-75" src="../images/nigeria-good-people-great-nation.png"
-                                        alt="good people great nation">
-                                </a>
-                            </div>
-                            <div class="col-6 p-3 p-lg-4 mb-md-3">
-                                <a href="#">
-                                    <img class="w-50" src="../images/nigeria-coat-of-arm.png" alt="nigeria coat of arm">
-                                </a>
-                            </div>
-                        </div>
+    <footer class="container-fluid py-5 px-sm-3 px-md-5">
+        <div class="card-group">
+            <div class="card bg-transparent border-0">
+                <div class="card-body">
+                    <h5 class="card-title mb-2">Contact Us </h5>
+                    <address class="d-flex">
+                        <span class="fw-bold me-2">
+                            Head Office: <br>
+                            Tel: <br>
+                            Email:
+                        </span>
+                        <span class="word-break">
+                            5, Web Street, Uyo, Nigeria. <br>
+                            +123456789 <br>
+                            support@worldcitizen.org
+                        </span>
+                    </address>
+                    <div class="nav mt-4">
+                        <a href="#" class="card-link"><span class="iconify" data-icon="ant-design:twitter-circle-filled"
+                                style="color: white;" data-width="40"></span></a>
+                        <a href="#" class="card-link"><span class="iconify" data-icon="ant-design:instagram-filled"
+                                style="color: white;" data-width="40"></span></span></a>
+                        <a href="#" class="card-link"><span class="iconify" data-icon="bi:facebook"
+                                style="color: white;" data-width="40"></span></a>
+                        <a href="#" class="card-link"><span class="iconify"
+                                data-icon="entypo-social:linkedin-with-circle" style="color: white;"
+                                data-width="40"></span></a>
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="container-fluid py-2">
-            <p class="text-center text-white copyright">© Copyright 2021 worldcitizen.org</p>
-        </section>
+            <div class="card bg-transparent border-0">
+                <div class="card-body">
+                    <h5 class="card-title">Links </h5>
+                    <div class="nav flex-column">
+                        <a class="nav-link text-decoration-none text-white p-0" href="./about.html">About Us</a>
+                        <a class="nav-link text-decoration-none text-white p-0" href="#">Rewards</a>
+                        <a class="nav-link text-decoration-none text-white p-0" href="#">Stories</a>
+                        <a class="nav-link text-decoration-none text-white p-0" href="./blog.html">Blog</a>
+                        <a class="nav-link text-decoration-none text-white p-0" href="#">Donation Centers</a>
+                        <a class="nav-link text-decoration-none text-white p-0" href="#">FAQs</a>
+                        <a class="nav-link text-decoration-none text-white p-0" href="#">Privacy Policy</a>
+                        <a class="nav-link text-decoration-none text-white p-0" href="#">Top Donors</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-transparent border-0">
+                <div class="card-body">
+                    <h5 class="card-title mb-3">Partners </h5>
+                    <div class="row row-cols-1 row-cols-md-2 g-4">
+                        <div class="col">
+                            <a href=""><img src="../images/wash-junkie.png" class="card-img w-75" alt="..."></a>
+                        </div>
+                        <div class="col">
+                            <a href=""><img src="../images/aystitches.png" class="card-img w-75" alt="..."></a>
+                        </div>
+                        <div class="col">
+                            <a href=""><img src="../images/fedex.png" class="card-img w-75" alt="..."></a>
+                        </div>
+                        <div class="col">
+                            <a href=""><img src="../images/gokada.png" class="card-img" alt="..."></a>
+                        </div>
+                        <div class="col">
+                            <a href=""><img src="../images/nigeria-good-people-great-nation.png" class="card-img w-50"
+                                    alt="..."></a>
+                        </div>
+                        <div class="col">
+                            <a href=""><img src="../images/nigeria-coat-of-arm.png" class="card-img w-50" alt="..."></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center pt-3">
+            © Copyright 2021 worldcitizen.org
+        </div>
     </footer>
 
-
-
-    <!--Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    <!-- Iconify -->
+    <script src="https://code.iconify.design/2/2.0.4/iconify.min.js"></script>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
 </body>
 
