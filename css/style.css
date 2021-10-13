@@ -61,7 +61,7 @@ footer,
 }
 
 .wc-about-bg {
-  height: 30vh;
+  height: 35vh;
   background: url("../images/sarah-brown-oa7pqZmmhuA-unsplash.jpg") center;
   background-size: cover;
   background-color: rgba(0, 0, 0, 0.726);
@@ -70,17 +70,17 @@ footer,
 }
 
 .wc-about {
-  margin-top: -80px !important;
+  margin-top: -75px !important;
   z-index: 1 !important;
 }
 
 .wc-about-base {
   height: fit-content;
-  margin-top: 200px;
+  margin-top: 70px;
 }
 
 .wc-about-base img {
-  height: 30vh;
+  height: 37vh;
 }
 
 .wc-form-bg {
@@ -108,10 +108,6 @@ background: #144e4e;
 color: white;
 }
 
-/* .wc-search-container {
-  right: 0;
-} */
-
 .wc-search-item {
   cursor: pointer;
 }
@@ -122,6 +118,7 @@ color: white;
 .wc-search-container {
   display: none;
   z-index: 100;
+  font-size: 0.7em;
 }
 
 /* .wc-search-container button {
