@@ -8,6 +8,14 @@ body {
   font-family: var(--wc-font);
 }
 
+a {
+  opacity: 0.85;
+}
+
+a:hover {
+  opacity: 1;
+}
+
 header,
 footer,
 .wc-bg {
@@ -44,12 +52,12 @@ footer,
 }
 
 .wc-portrait {
-  height: 10em;
-  width: 10em;
+  height: 9em;
+  width: 9em;
 }
 
 .wc-card-h {
-  height: 300px;
+  height: 15em;
 }
 
 .wc-about-bg {
@@ -95,6 +103,32 @@ footer,
   z-index: 100 !important;
 }
 
+.wc-dropdown-hover:hover {
+background: #144e4e;
+color: white;
+}
+
+/* .wc-search-container {
+  right: 0;
+} */
+
+.wc-search-item {
+  cursor: pointer;
+}
+.wc-search-item:hover {
+  background: #ececec;
+}
+
+.wc-search-container {
+  display: none;
+  z-index: 100;
+}
+
+/* .wc-search-container button {
+  top: 0;
+  right: 0;
+} */
+
 .word-break {
   word-break: break-all;
 }
@@ -129,9 +163,26 @@ section.onboarding {
   min-height: 80vh;
 }
 
-@media all and (min-width: 1000px) {
+
+
+@media all and (min-width: 768px) {
+.wc-search-container {
+  position: absolute;
+  right: 2.5em;
+}
+
+.wc-welcome-font {
+  font-size: 2.5em;
+}
+}
+
+@media all and (min-width: 1024px) {
   .wc-card-h {
     height: 350px;
+  }
+
+  .wc-welcome-font {
+    font-size: 2.9em;
   }
 }
 

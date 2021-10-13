@@ -19,19 +19,20 @@
 </head>
 
 <body>
-  <header class="container-fluid p-2 px-sm-3 px-md-5">
+
+  <header class="container-fluid p-2 px-sm-3 px-lg-5 position-relative">
     <div class="d-flex justify-content-between align-items-center">
       <h1><a href="./index.html" class="fs-2 text-decoration-none text-white">World Citizen</a></h1>
-      <button type="button" class="btn text-white rounded-pill px-3 py-2 wc-btn">Donate Now</button>
+      <a href="./pages/donation-details.html" type="button" class="btn text-white rounded-pill px-3 py-2 wc-btn">Donate Now</a>
     </div>
-    <nav class="navbar navbar-expand-lg navbar-dark mt-2 py-1 rounded-3">
+    <nav class="navbar navbar-expand-md navbar-dark mt-2 p-1 rounded-3">
       <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        <button class="navbar-toggler p-0 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <span class="iconify" data-icon="eva:menu-outline" data-width="32"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav me-auto mb-2 mb-md-auto text-start d-md-flex align-items-md-center">
             <li class="nav-item me-lg-5">
               <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
             </li>
@@ -39,36 +40,45 @@
               <a class="nav-link" href="./pages/about.html">About</a>
             </li>
             <li class="nav-item me-lg-5">
+              <a class="nav-link" href="./pages/stories.html">Stories</a>
+            </li>
+            <li class="nav-item me-lg-5">
               <a class="nav-link" href="./pages/blog.html">Blog</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><span class="iconify" data-icon="bx:bxs-user-circle" data-width="30"></span></a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Login</a></li>
-                <li><a class="dropdown-item" href="#">Sign Up</a></li>
+              <ul class="dropdown-menu wc-box-shadow">
+                <li><a class="dropdown-item wc-dropdown-hover" href="./pages/login.html">Login</a></li>
+                <li><a class="dropdown-item wc-dropdown-hover" href="./pages/signup.html">Sign Up</a></li>
               </ul>
             </li>
           </ul>
           <form class="d-flex">
-            <input class="form-control rounded-0 rounded-start border-white-50 bg-transparent border-end-0"
-              type="search" placeholder="Search" aria-label="Search">
-            <button class="btn text-white rounded-0 rounded-end wc-bg" type="submit"><span class="iconify"
-                data-icon="ri:search-fill"></span></button>
+            <input id="searchInput" class="form-control rounded-pill border-white-50 bg-transparent text-white"
+              type="search" placeholder="Search..." aria-label="Search">
           </form>
         </div>
       </div>
     </nav>
+    <div class="wc-search-container rounded-1 bg-white text-dark col-md-4 col-lg-3 me-md-0 p-2">
+      <div class="d-flex justify-content-between align-items-center mb-3">
+<h6>Search Result</h6>
+        <button id="closeSearchBtn" type="button" class="btn btn-light btn-sm"><span class="iconify" data-icon="ci:close-small" data-width="20"></span></button>
+      </div>
+      <ul id="searchList" class="list-unstyled ">
+      </ul>
+    </div>
   </header>
-  <main>
+  <main> 
     <section class="onboarding container-fluid d-flex align-items-center">
-      <div class="mx-auto text-center col-sm-10 col-md-8 col-lg-6">
-        <h2 class="text-white align-middle fs-1 mb-5">A cloth could mean so much to someone, somewhere.</h2>
-        <button type="button" class="btn text-white rounded-pill px-3 py-2 wc-btn">Donate Now</button>
+      <div class="mx-auto text-center col-sm-10 col-md-12 col-lg-6">
+        <h1 class="text-white align-middle wc-welcome-font mb-5">A clothe could mean so much to<br> someone, somewhere.</h1>
+        <a href="./pages/donation-details.html" type="button" class="btn text-white rounded-pill px-3 py-2 wc-btn">Donate Now</a>
       </div>
     </section>
     <section class="container-fluid py-5 px-sm-3 px-md-5 text-center">
       <h4 class="text-center mb-4 fs-4">Our Donation Options</h4>
-      <div class="row px-md-5">
+      <div class="row px-sm-3 px-md-5">
         <div class="col-sm-6 wc-bg">
           <div class="card-body py-5 px-sm-1 px-lg-5">
             <span class="iconify mb-2" data-icon="ant-design:home-filled" style="color: white;" data-width="150"></span>
@@ -125,7 +135,7 @@
           </div>
         </div>
       </div>
-      <button type="button" class="btn mt-5 rounded-pill px-3 py-2 wc-btn-outline">Read More</button>
+      <a href="./pages/stories.html" type="button" class="btn mt-5 rounded-pill px-3 py-2 wc-btn-outline">Read More</a>
     </section>
     <section class="container-fluid py-5 px-sm-3 px-md-5 text-center wc-bg">
       <h4 class="text-center mb-4 fs-4">Top Donors</h4>
@@ -227,12 +237,12 @@
           </div>
         </div>
       </div>
-      <button type="button" class="btn mt-5 rounded-pill px-3 py-2 wc-btn-outline">Read More</button>
+      <a href="./pages/blog.html" type="button" class="btn mt-5 rounded-pill px-3 py-2 wc-btn-outline">Read More</a>
     </section>
   </main>
   <footer class="container-fluid py-5 px-sm-3 px-md-5">
-    <div class="card-group">
-      <div class="card bg-transparent border-0">
+    <div class="row">
+      <div class="col-sm-8 col-lg-4">
         <div class="card-body">
           <h5 class="card-title mb-2">Contact Us </h5>
           <address class="d-flex">
@@ -243,7 +253,7 @@
             </span>
             <span class="word-break">
               5, Web Street, Uyo, Nigeria. <br>
-              +123456789 <br>
+              +1234567890 <br>
               support@worldcitizen.org
             </span>
           </address>
@@ -259,25 +269,24 @@
           </div>
         </div>
       </div>
-      <div class="card bg-transparent border-0">
+      <div class="col-sm-4 col-lg-2">
         <div class="card-body">
           <h5 class="card-title">Links </h5>
           <div class="nav flex-column">
             <a class="nav-link text-decoration-none text-white p-0" href="./pages/about.html">About Us</a>
-            <a class="nav-link text-decoration-none text-white p-0" href="#">Rewards</a>
-            <a class="nav-link text-decoration-none text-white p-0" href="#">Stories</a>
+            <a class="nav-link text-decoration-none text-white p-0" href="#">Top Donors</a>
+            <a class="nav-link text-decoration-none text-white p-0" href="./pages/stories.html">Stories</a>
             <a class="nav-link text-decoration-none text-white p-0" href="./pages/blog.html">Blog</a>
             <a class="nav-link text-decoration-none text-white p-0" href="#">Donation Centers</a>
             <a class="nav-link text-decoration-none text-white p-0" href="#">FAQs</a>
             <a class="nav-link text-decoration-none text-white p-0" href="#">Privacy Policy</a>
-            <a class="nav-link text-decoration-none text-white p-0" href="#">Top Donors</a>
           </div>
         </div>
       </div>
-      <div class="card bg-transparent border-0">
+      <div class="col-sm-12 col-lg-6">
         <div class="card-body">
           <h5 class="card-title mb-3">Partners </h5>
-          <div class="row row-cols-1 row-cols-md-2 g-4">
+          <div class="row row-cols-2 row-cols-sm-3 g-4">
             <div class="col">
                 <a href=""><img src="./images/wash-junkie.png" class="card-img w-75" alt="..."></a>
             </div>
@@ -288,10 +297,10 @@
                 <a href=""><img src="./images/fedex.png" class="card-img w-75" alt="..."></a>
               </div>
             <div class="col">
-                <a href=""><img src="./images/gokada.png" class="card-img" alt="..."></a>
+                <a href=""><img src="./images/gokada.png" class="card-img w-75" alt="..."></a>
             </div>
             <div class="col">
-                <a href=""><img src="./images/nigeria-good-people-great-nation.png" class="card-img w-50" alt="..."></a>
+                <a href=""><img src="./images/nigeria-good-people-great-nation.png" class="card-img w-75" alt="..."></a>
             </div>
             <div class="col">
                 <a href=""><img src="./images/nigeria-coat-of-arm.png" class="card-img w-50" alt="..."></a>
@@ -312,6 +321,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
+<script src="./js/script.js"></script>
 </body>
 
 </html>
