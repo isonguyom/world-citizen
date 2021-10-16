@@ -14,6 +14,15 @@ a {
 
 a:hover {
   opacity: 1;
+  color: var(--wc-color);
+}
+
+input::placeholder {
+  color: rgb(185, 184, 184) !important;
+}
+
+input:focus {
+  border: 1px solid var(--wc-sec-color) !important;
 }
 
 header,
@@ -56,13 +65,9 @@ footer,
   width: 9em;
 }
 
-.wc-card-h {
-  height: 15em;
-}
-
 .wc-about-bg {
   height: 35vh;
-  background: url("../images/sarah-brown-oa7pqZmmhuA-unsplash.jpg") center;
+  background: url("https://res.cloudinary.com/djtgw5sv5/image/upload/v1634405531/world%20citizen/about_bg.jpg") center;
   background-size: cover;
   background-color: rgba(0, 0, 0, 0.726);
   background-blend-mode: soft-light;
@@ -70,21 +75,17 @@ footer,
 }
 
 .wc-about {
-  margin-top: -75px !important;
-  z-index: 1 !important;
+  margin-top: -75px;
+  z-index: 1;
 }
 
 .wc-about-base {
   height: fit-content;
-  margin-top: 70px;
-}
-
-.wc-about-base img {
-  height: 37vh;
+  margin-top: 100px;
 }
 
 .wc-form-bg {
-  background: url("../images/landing-page.jpg") center fixed;
+  background: url("https://res.cloudinary.com/djtgw5sv5/image/upload/v1634396248/world%20citizen/wc_landing_and_form_pages_background.jpg") center fixed;
   background-size: cover;
   height: fit-content;
 }
@@ -101,6 +102,11 @@ footer,
 .wc-ml-n5 {
   margin-left: -2.8em !important;
   z-index: 100 !important;
+}
+
+.wc-dropdown-hover.active {
+  background: var(--wc-sec-color);
+  color: white;
 }
 
 .wc-dropdown-hover:hover {
@@ -121,10 +127,12 @@ color: white;
   font-size: 0.7em;
 }
 
-/* .wc-search-container button {
-  top: 0;
-  right: 0;
-} */
+.wc-modal {
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.904);
+  z-index: 10000;
+  display: none;
+}
 
 .word-break {
   word-break: break-all;
@@ -152,14 +160,21 @@ input[type="search"]::placeholder {
   color: rgb(201, 201, 201);
 }
 
+input[type="checkbox"]:checked {
+  background-color: var(--wc-sec-color);
+}
+
 section.onboarding {
-  background: url("../images/landing-page.jpg") center;
+  background: url("https://res.cloudinary.com/djtgw5sv5/image/upload/v1634396248/world%20citizen/wc_landing_and_form_pages_background.jpg") center;
   background-size: cover;
   background-color: rgba(0, 0, 0, 0.726);
   background-blend-mode: soft-light;
-  min-height: 80vh;
+  min-height: 90vh;
 }
 
+#eye {
+  display: none;
+}
 
 
 @media all and (min-width: 768px) {
@@ -174,10 +189,6 @@ section.onboarding {
 }
 
 @media all and (min-width: 1024px) {
-  .wc-card-h {
-    height: 350px;
-  }
-
   .wc-welcome-font {
     font-size: 2.9em;
   }
