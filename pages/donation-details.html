@@ -117,14 +117,14 @@
                     <fieldset class="row g-3">
                         <h4 class="mb-3 fs-5 wc-color">Donation details</h4>
                         <div class="col-md-6 mb-3">
-                            <label for="donationOptions" class="form-label">Donation Option <span
+                            <label for="selectDonationOption" class="form-label">Donation Option <span
                                     class="wc-color fs-5">*</span></label>
                             <div class="input-group">
-                                <select id="donationOptions" class="form-select rounded-pill" placeholder="Choose donation option..."
+                                <select id="selectDonationOption" class="form-select rounded-pill" placeholder="Choose donation option..."
                                     required>
-                                    <option value="0">Choose donation option...</option>
+                                    <option value disabled selected>Choose donation option...</option>
                                     <option id="homePickup" value="Home Pickup">Home pickup</option>
-                                    <option id="donationCenter" value="Donation">Donation center</option>
+                                    <option id="donationCenter" value="Donation Center">Donation center</option>
                                 </select>
                                 <span class="wc-ml-n5 input-group-text border-0 bg-transparent" type="button"
                                     id="button-addon2"><span class="iconify" data-icon="bx:bxs-down-arrow"
@@ -149,7 +149,7 @@
                                 <div class="input-group">
                                     <select id="center" class="form-select rounded-pill" placeholder="Choose donation option..."
                                         required>
-                                        <option value="0">Choose a donation center near you...</option>
+                                        <option value disabled selected>Choose a donation center near you...</option>
                                         <option value="Center A">Center A</option>
                                         <option value="Center B">Center B</option>
                                         <option value="Center C">Center C</option>
@@ -294,7 +294,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
-    <script src="../js/script.js"></script>
+        <script src="../js/donation-option.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 
 </html>

@@ -83,51 +83,5 @@ let validateForm = function () {
     })
 }
 
-//TOGGLING PASSWORD VISIBILITY
-//password
-const togglePswVisibility = document.querySelector('#pswVisibility');
-const password = document.querySelector('#psw');
-togglePswVisibility.addEventListener('click', function (e) {
 
-    
-    if (password.type === "password") {
-        password.type = "text";
-        this.innerHTML = '<span class="iconify" data-icon="eva:eye-fill" style="color: #414141;" data-width="20"></span>'
-    } else {
-        password.type = "password";
-        this.innerHTML = '<span id="eyeSlash" class="iconify wc-eye-slash" data-icon="eva:eye-off-fill" style="color: #414141;" data-width="20"></span>'
-    }
-});
-// confirm password
-const toggleConfirmPswVisibility = document.querySelector('#confirmPswVisibility');
-const confirmPassword = document.querySelector('#confirmPsw');
-toggleConfirmPswVisibility.addEventListener('click', function (e) {
 
-    
-    if (confirmPassword.type === "password") {
-        confirmPassword.type = "text";
-        this.innerHTML = '<span class="iconify" data-icon="eva:eye-fill" style="color: #414141;" data-width="20"></span>'
-    } else {
-        confirmPassword.type = "password";
-        this.innerHTML = '<span id="eyeSlash" class="iconify wc-eye-slash" data-icon="eva:eye-off-fill" style="color: #414141;" data-width="20"></span>'
-    }
-});
-
-// TOGGLING BETWEEN PICKUP ADDRESS INPUT FIELD AND DONATION CENTERS SELECT OPTIONS
-let donationOption = document.getElementById('donationOptions');
-let homePickup = document.getElementById('homePickup');
-let donationCenter = document.getElementById('donationCenter');
-let pickupAddress = document.getElementById('pickupAddress');
-let pickupInputField = document.getElementById('pickupInput');
-let donationCentersSelect = document.getElementById('selectCenter');
-
-if (donationOption.value = homePickup) {
-    pickupInputField.enabled
-} else if (donationOption.value = donationCenter) {
-    pickupAddress.style.display ='none'
-donationCentersSelect.style.display = 'block'
-} else {
-    pickupInputField.disabled;
-    donationCentersSelect.style.display = 'none'
-
-}
