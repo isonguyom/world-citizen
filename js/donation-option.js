@@ -19,3 +19,15 @@ selectDonationCenter.style.display ='block'
     }
     
   });
+
+let uploadField = document.getElementById("fileUpload");
+
+uploadField.onchange = function() {
+    if(this.files[0].size > 2097152){
+        let invalidFeedback = document.getElementById('fileInvalidFeedback')
+    //    alert("File is too big!");
+    invalidFeedback.style.display = 'block';
+       invalidFeedback.innerHTML = 'File is either too big'
+       this.value = "";
+    };
+};

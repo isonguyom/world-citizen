@@ -126,9 +126,9 @@
                                     <option id="homePickup" value="Home Pickup">Home pickup</option>
                                     <option id="donationCenter" value="Donation Center">Donation center</option>
                                 </select>
-                                <span class="wc-ml-n5 input-group-text border-0 bg-transparent" type="button"
+                                <!-- <span class="wc-ml-n5 input-group-text border-0 bg-transparent" type="button"
                                     id="button-addon2"><span class="iconify" data-icon="bx:bxs-down-arrow"
-                                        style="color: #414141;" data-width="20"></span></span>
+                                        style="color: #414141;" data-width="20"></span></span> -->
                             </div>
                             <div class="invalid-feedback">Choose a donation option to proceed.</div>
                         </div>
@@ -142,8 +142,8 @@
                                     <span class="wc-ml-n5 input-group-text border-0 bg-transparent" type="button"
                                         id="button-addon2"><span class="iconify" data-icon="ph:address-book-fill"
                                             style="color: #414141;" data-width="20"></span></span>
+                                            <div class="invalid-feedback">Field out a valid address</div>
                                 </div>
-                                <div class="invalid-feedback">Field out a valid address</div>
                             </div>
                             <div class="w-100 " id="selectCenter">
                                 <div class="input-group">
@@ -156,11 +156,11 @@
                                         <option value="Center D">Center D</option>
                                         <option value="Center E">Center E</option>
                                     </select>
-                                    <span class="wc-ml-n5 input-group-text border-0 bg-transparent" type="button"
+                                    <!-- <span class="wc-ml-n5 input-group-text border-0 bg-transparent" type="button"
                                         id="button-addon2"><span class="iconify" data-icon="bx:bxs-down-arrow"
-                                            style="color: #414141;" data-width="20"></span></span>
+                                            style="color: #414141;" data-width="20"></span></span> -->
+                                            <div class="invalid-feedback">You have not choosen a donation center</div>
                                 </div>
-                                <div class="invalid-feedback">You have not choosen a donation center</div>
                             </div>
                         </div>
                         <div class="col-md-6 mb-3">
@@ -168,9 +168,9 @@
                                     class="wc-color fs-5">*</span></label>
                             <div class="input-group">
                                 <input id="pickupDate" class="form-control rounded-pill" type="date" placeholder="dd/mm/yyyy" required>
-                                <span class="wc-ml-n5 input-group-text border-0 bg-transparent" type="button"
+                                <!-- <span class="wc-ml-n5 input-group-text border-0 bg-transparent" type="button"
                                     id="button-addon2"><span class="iconify" data-icon="ant-design:calendar-filled"
-                                        style="color: #414141;" data-width="20"></span></span>
+                                        style="color: #414141;" data-width="20"></span></span> -->
                                         <div class="invalid-feedback">Select a viable date.</div>
                             </div>                           
                         </div>
@@ -179,9 +179,9 @@
                                     class="wc-color fs-5">*</span></label>
                             <div class="input-group">
                                 <input id="pickupTime" class="form-control rounded-pill" type="time" placeholder="hh:mm am/pm" required>
-                                <span class="wc-ml-n5 input-group-text border-0 bg-transparent" type="button"
+                                <!-- <span class="wc-ml-n5 input-group-text border-0 bg-transparent" type="button"
                                     id="button-addon2"><span class="iconify" data-icon="ant-design:clock-circle-filled"
-                                        style="color: #414141;" data-width="20"></span></span>
+                                        style="color: #414141;" data-width="20"></span></span> -->
                                         <div class="invalid-feedback">Field out a viable time</div>
                             </div>
                             <div class="form-text">Your time should have a range of plus/minus 30minutes</div>
@@ -200,9 +200,9 @@
                         <div class="col-md-6 mb-3">
                             <label for="fileUpload" class="form-label">Upload Donation Description or Image
                                 <span class="wc-color fs-5">*</span></label>
-                            <input id="fileUpload" class="form-control rounded-pill border-0"                                placeholder="Click to upload file" type="file" required>
-                            <div class="invalid-feedback">Your upload should be a pdf, jpeg, or png file of not more 10MB </div>
-                            <div class="form-text">A pdf, jpeg, or png file of not more than 10MB is allowed</div>
+                            <input id="fileUpload" class="form-control rounded-pill border-0"  placeholder="Click to upload file" type="file" accept=".png, .jpg, .jpeg, .pdf" required>
+                            <div id="fileInvalidFeedback" class="invalid-feedback">Your upload should be a pdf, jpg, jpeg, or png file of not more 2MB </div>
+                            <div class="form-text">A pdf, jpg jpeg, or png file of not more than 2MB is allowed</div>
                         </div>
                     </fieldset>
                     <div class="w-100 p-0 d-sm-flex justify-content-between mt-4 text-center">
