@@ -111,6 +111,32 @@
             <p>Don’t have an account? <a href="./signup.html" class="text-decoration-none wc-color">Sign Up</a></p>
                 </div>
         </section>
+        <section class="position-fixed wc-chatbot text-end">
+          <div id="chatBox" class="wc-box-shadow">
+            <header class="d-flex align-items-center justify-content-between px-3 py-1">
+              <h4 class="d-flex align-items-center fs-5"><span class="iconify me-1"
+                  data-icon="fluent:chat-multiple-24-filled" style="color: white;" data-width="40"></span>Chatbot</h4>
+              <button id="closeChatbot" class="btn p-0"><span class="iconify" data-icon="ant-design:close-circle-filled"
+                  style="color: white;" data-width="30"></span></button>
+            </header>
+            <div id="chatDisplay" class="wc-chatbot-display p-3">
+    
+            </div>
+            <footer class="px-3 py-2">
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="input-group flex-nowrap p-1 rounded-3 wc-chatbot-input">
+                  <input type="text" id="messageInput" class="form-control bg-transparent border-0 text-white"
+                    placeholder="Type your message...">
+                </div>
+                <button type="submit" class="btn text bg-transparent border-0 p-1" id="sendMessage"><span class="iconify"
+                    data-icon="carbon:send-filled" style="color: white;" data-width="30"></span></button>
+              </div>
+            </footer>
+          </div>
+          <button id="chatBtn" class="btn p-0">
+            <span class="iconify" data-icon="bi:chat-fill" style="color: #196363;" data-width="60"></span>
+          </button>
+        </section>
     </main>
     <footer class="container-fluid py-5 px-sm-3 px-md-5">
       <div class="row">

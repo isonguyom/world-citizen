@@ -23,7 +23,7 @@ searchInput.addEventListener("keyup", e => {
 // Load search data
 const loadItems = async () => {
     try {
-        const res = await fetch('https://hp-api.herokuapp.com/api/characters');
+        const res = await fetch('api/search');
         searchResults = await res.json();
         // displaySearchResults(searchResults);
     } catch (err) {
@@ -38,7 +38,7 @@ const displaySearchResults = (items) => {
             return `
             <li class="wc-search-item mb-2 border p-1">
                 <h6 class="m-0">${item.name}</h6>
-                <p class="m-0">House: ${item.house}</p>
+                <p class="m-0">House: ${item.description}</p>
             </li>
         `;
         })
@@ -81,7 +81,37 @@ let validateForm = function () {
         form.classList.add('was-validated')
       }, false)
     })
+
 }
 
+// CHATBOT FUNCTIONALITY
+// Toggling opening and closing chatbot
+let openChatboxBtn = document.getElementById('chatBtn');
+let closeChatbotBtn =document.getElementById('closeChatbot');
+let toggleChatbot = function () {
+    let chatBox = document.getElementById("chatBox");
+    if (chatBox.style.display === "none") {
+        openChatboxBtn.style.display = "none"
+      chatBox.style.display = "block";
+    } else {
+      chatBox.style.display = "none";
+      openChatboxBtn.style.display = "block"
+    }
+}
+openChatboxBtn.addEventListener('click', toggleChatbot);
+closeChatbotBtn.addEventListener('click', toggleChatbot);
 
-
+// Getting and displaying chat messages
+let sendMessage = document.getElementById('sendMessage')
+let displaySentMessage = function (){
+    // Selecting the input element and get its value 
+   let message = document.getElementById("messageInput").value;
+    let displaySection = document.getElementById('chatDisplay')
+// Create new div and append new message
+  let newMessage = document.createElement('DIV')
+  newMessage.classList.add('style-node');
+  newMessage.innerHTML = message
+    //append to display section 
+displaySection.append(newMessage);
+}
+sendMessage.addEventListener('click', displaySentMessage)

@@ -132,7 +132,39 @@ color: white;
   background: rgba(0, 0, 0, 0.904);
   z-index: 10000;
   display: none;
+  top: 0;
 }
+
+.wc-chatbot {
+  bottom: 1em;
+  right: 1em;
+}
+
+.wc-chatbot-input {
+  background: #C54B4B;
+}
+
+.wc-chatbot-display {
+  min-height: 200px;
+  background: #DCC9C9;
+}
+
+#chatBox {
+  display: none;
+}
+
+.style-node {
+  background: var(--wc-sec-color);
+  border-radius: 10px;
+  padding: 0.3em;
+  color: white;
+  width: fit-content;
+  border-top-right-radius: 0;
+  margin-bottom: 0.1em;
+  float: right;
+  clear: both;
+}
+
 
 .word-break {
   word-break: break-all;

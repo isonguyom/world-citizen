@@ -31,3 +31,13 @@ uploadField.onchange = function() {
        this.value = "";
     };
 };
+
+let donationForm = document.querySelector('#donationForm')
+donationForm.addEventListener('submit', function (e) {
+    e.preventDefault();
+    const isValid = donationForm.checkValidity();
+
+if ( isValid ) {
+    document.querySelector('.wc-modal').style.display = 'flex'
+  }
+});

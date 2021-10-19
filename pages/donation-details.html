@@ -19,14 +19,6 @@
 </head>
 
 <body>
-    <section class="wc-modal w-100 text-center justify-content-center align-items-center position-fixed">
-        <div class="wc-modal-inner card col-sm-10 col-md-6 col-lg-6 p-2 p-sm-3 p-md-5 lh-lg">
-            <h2 class="card-title wc-color mb-4">Congratulations!</h2>
-            <h5 class="card-subtitle mb-3">Your donation has been submitted successfully.</h5>
-            <p class="card-text mb-5">Check your mail for donation details.</p>
-            <a href="../index.html" type="submit" class="btn wc-btn text-white rounded-pill px-5 card-link">Return To Homepage</a>
-        </div>
-    </section>
     <header class="container-fluid p-2 px-sm-3 px-lg-5 position-relative">
         <div class="d-flex justify-content-between align-items-center">
             <h1><a href="../index.html" class="fs-2 text-decoration-none text-white">World Citizen</a></h1>
@@ -87,7 +79,7 @@
 
             <div class="bg-white p-5 w-100 wc-box-shadow rounded-1">
                 <h2 class="mb-4 fs-4 text-center text-capitalize">Input your donation details</h2>
-                <form class="mb-4 needs-validation" novalidate>
+                <form id="donationForm" class="mb-4 needs-validation" novalidate>
                     <fieldset class="row g-3 mb-4">
                         <h4 class="mb-3 fs-5 wc-color">Donor's details</h4>
                         <div class="col-md-6 mb-3">
@@ -212,6 +204,40 @@
                     </div>
                 </form>
         </section>
+        <section class="wc-modal w-100 text-center justify-content-center align-items-center position-fixed">
+            <div class="wc-modal-inner card col-sm-10 col-md-6 col-lg-6 p-2 p-sm-3 p-md-5 lh-lg">
+                <h2 class="card-title wc-color mb-4">Congratulations!</h2>
+                <h5 class="card-subtitle mb-3">Your donation has been submitted successfully.</h5>
+                <p class="card-text mb-5">Check your mail for donation details.</p>
+                <a href="../index.html" type="submit" class="btn wc-btn text-white rounded-pill px-5 card-link">Return To Homepage</a>
+            </div>
+        </section>
+        <section class="position-fixed wc-chatbot text-end">
+            <div id="chatBox" class="wc-box-shadow">
+              <header class="d-flex align-items-center justify-content-between px-3 py-1">
+                <h4 class="d-flex align-items-center fs-5"><span class="iconify me-1"
+                    data-icon="fluent:chat-multiple-24-filled" style="color: white;" data-width="40"></span>Chatbot</h4>
+                <button id="closeChatbot" class="btn p-0"><span class="iconify" data-icon="ant-design:close-circle-filled"
+                    style="color: white;" data-width="30"></span></button>
+              </header>
+              <div id="chatDisplay" class="wc-chatbot-display p-3">
+      
+              </div>
+              <footer class="px-3 py-2">
+                <div class="d-flex justify-content-center align-items-center">
+                  <div class="input-group flex-nowrap p-1 rounded-3 wc-chatbot-input">
+                    <input type="text" id="messageInput" class="form-control bg-transparent border-0 text-white"
+                      placeholder="Type your message...">
+                  </div>
+                  <button type="submit" class="btn text bg-transparent border-0 p-1" id="sendMessage"><span class="iconify"
+                      data-icon="carbon:send-filled" style="color: white;" data-width="30"></span></button>
+                </div>
+              </footer>
+            </div>
+            <button id="chatBtn" class="btn p-0">
+              <span class="iconify" data-icon="bi:chat-fill" style="color: #196363;" data-width="60"></span>
+            </button>
+          </section>
     </main>
     <footer class="container-fluid py-5 px-sm-3 px-md-5">
         <div class="row">
