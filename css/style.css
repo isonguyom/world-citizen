@@ -4,6 +4,12 @@
   --wc-font: Lato, sans-serif;
 }
 
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  font-size: 100%;
+}
+
 body {
   font-family: var(--wc-font);
 }
@@ -138,6 +144,7 @@ color: white;
 .wc-chatbot {
   bottom: 1em;
   right: 1em;
+  z-index: 100;
 }
 
 .wc-chatbot-input {
@@ -211,6 +218,11 @@ section.onboarding {
 #selectCenter {
   display: none;
 }
+
+*:focus {
+  outline: gray solid 1px !important;
+}
+
 
 @media all and (min-width: 768px) {
 .wc-search-container {
